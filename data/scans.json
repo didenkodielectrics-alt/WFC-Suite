@@ -1,11 +1,12 @@
 {
   "realm": "RP-PvP (Horde)",
-  "itemsTracked": 4896,
+  "itemsTracked": 5169,
   "itemsWithListingsByDate": {
     "2026-11-13": 1,
     "2026-11-14": 4025,
-    "2026-11-15": 4565
+    "2026-11-15": 4565,
+    "2026-11-16": 4386
   },
-  "latestScanDate": "2026-11-15",
+  "latestScanDate": "2026-11-16",
   "prices": "copper; minimum buyout"
 }
