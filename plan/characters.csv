@@ -1,0 +1,5 @@
+character,full_name,race,class,level,gold,zone,subzone,professions,bag_items,bank_items,mail_items,snapshot_source,snapshot_time,bank_seen,mail_seen
+Bitores,Bitores Mendez,Scourge,WARRIOR,3,41s 1c,Undercity,Canals,Blacksmithing 48/75; Alchemy 33/75,34,4,11,bagbrother,2026-11-15T19:54:04Z,,2026-11-15T19:53:56Z
+Cen,Cen Taurus,Tauren,SHAMAN,10,0c,Thunder Bluff,,Leatherworking 110/150; Herbalism 27/75,0,0,0,live,2026-11-16T04:08:05Z,,2026-11-16T04:00:19Z
+Gnomestomper,Gnomestomper Greybeard,Orc,HUNTER,27,3g 0s 57c,Stonetalon Mountains,Sun Rock Retreat,First Aid 80/150; Cooking 168/225; Mining 124/150; Fishing 198/225; Skinning 186/225,25,29,0,bagbrother,2026-11-16T03:36:40Z,2026-11-16T02:51:01Z,2026-11-16T02:54:34Z
+Ophelia,Ophelia Wanderlust,Scourge,MAGE,15,3s 67c,The Barrens,The Crossroads,Tailoring 93/150; Enchanting 112/150,26,2,17,bagbrother,2026-11-14T23:31:54Z,,2026-11-14T23:31:41Z

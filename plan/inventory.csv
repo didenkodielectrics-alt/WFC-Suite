@@ -1,0 +1,149 @@
+character,location,item_id,name,count
+Bitores,bags,5956,Blacksmith Hammer,1
+Bitores,bags,5075,Blood Shard,50
+Bitores,bags,3469,Copper Chain Boots,1
+Bitores,bags,2852,Copper Chain Pants,1
+Bitores,bags,2844,Copper Mace,1
+Bitores,bags,2924,Crocolisk Meat,4
+Bitores,bags,2449,Earthroot,4
+Bitores,bags,5997,Elixir of Minor Defense,3
+Bitores,bags,247755,Elixir of Minor Force,4
+Bitores,bags,3371,Empty Vial,8
+Bitores,bags,4604,Forest Mushroom Cap,14
+Bitores,bags,10939,Greater Magic Essence,1
+Bitores,bags,6948,Hearthstone,1
+Bitores,bags,5467,Kodo Meat,1
+Bitores,bags,1705,Lesser Moonstone,1
+Bitores,bags,2304,Light Armor Kit,10
+Bitores,bags,279960,Lodestone,1
+Bitores,bags,4592,Longjaw Mud Snapper,41
+Bitores,bags,774,Malachite,3
+Bitores,bags,118,Minor Healing Potion,1
+Bitores,bags,5543,Plans: Iridescent Hammer,1
+Bitores,bags,250989,Recipe: Lesser Mender's Potion,1
+Bitores,bags,159,Refreshing Spring Water,2
+Bitores,bags,2681,Roasted Boar Meat,1
+Bitores,bags,2862,Rough Sharpening Stone,23
+Bitores,bags,2835,Rough Stone,19
+Bitores,bags,4561,Scalping Tomahawk,1
+Bitores,bags,4409,Schematic: Small Seaforium Charge,1
+Bitores,bags,954,Scroll of Strength,1
+Bitores,bags,279944,Sharpening Wheel,2
+Bitores,bags,3820,Stranglekelp,1
+Bitores,bags,818,Tigerseye,1
+Bitores,bags,3576,Tin Bar,1
+Bitores,bags,2592,Wool Cloth,2
+Bitores,bank,774,Malachite,2
+Bitores,bank,2447,Peacebloom,28
+Bitores,bank,765,Silverleaf,11
+Bitores,bank,818,Tigerseye,1
+Bitores,mail,2836,Coarse Stone,11
+Bitores,mail,1081,Crisp Spider Meat,11
+Bitores,mail,6359,Firefin Snapper,84
+Bitores,mail,1705,Lesser Moonstone,1
+Bitores,mail,6358,Oily Blackmouth,12
+Bitores,mail,249391,Pyrite,2
+Bitores,mail,2835,Rough Stone,14
+Bitores,mail,3174,Spider Ichor,1
+Bitores,mail,3820,Stranglekelp,5
+Bitores,mail,5470,Thunder Lizard Tail,1
+Bitores,mail,818,Tigerseye,1
+Gnomestomper,bags,4593,Bristle Whisker Catfish,27
+Gnomestomper,bags,9451,Bubbling Water,1
+Gnomestomper,bags,5478,Dig Rat Stew,5
+Gnomestomper,bags,4471,Flint and Tinder,1
+Gnomestomper,bags,929,Healing Potion,2
+Gnomestomper,bags,6948,Hearthstone,1
+Gnomestomper,bags,2581,Heavy Linen Bandage,17
+Gnomestomper,bags,2678,Mild Spices,1
+Gnomestomper,bags,2901,Mining Pick,1
+Gnomestomper,bags,16886,Outlaw Sabre,1
+Gnomestomper,bags,249427,Pristine Leather,3
+Gnomestomper,bags,6289,Raw Longjaw Mud Snapper,7
+Gnomestomper,bags,6362,Raw Rockscale Cod,76
+Gnomestomper,bags,4603,Raw Spotted Yellowtail,16
+Gnomestomper,bags,3030,Razor Arrow,1004
+Gnomestomper,bags,17062,Recipe: Mithril Head Trout,1
+Gnomestomper,bags,6369,Recipe: Rockscale Cod,1
+Gnomestomper,bags,21219,Recipe: Sagefish Delight,1
+Gnomestomper,bags,21114,Rumsey Rum Dark,3
+Gnomestomper,bags,7005,Skinning Knife,1
+Gnomestomper,bags,21072,Smoked Sagefish,19
+Gnomestomper,bags,1708,Sweet Nectar,40
+Gnomestomper,bags,3771,Wild Hog Shank,20
+Gnomestomper,bags,6504,Wingblade,1
+Gnomestomper,bags,2592,Wool Cloth,13
+Gnomestomper,bank,2841,Bronze Bar,16
+Gnomestomper,bank,2453,Bruiseweed,1
+Gnomestomper,bank,4364,Coarse Blasting Powder,2
+Gnomestomper,bank,2836,Coarse Stone,12
+Gnomestomper,bank,2770,Copper Ore,7
+Gnomestomper,bank,6601,Dervish Boots,1
+Gnomestomper,bank,17058,Fish Oil,1
+Gnomestomper,bank,209851,Fury of the Land,1
+Gnomestomper,bank,858,Lesser Healing Potion,1
+Gnomestomper,bank,17056,Light Feather,14
+Gnomestomper,bank,2589,Linen Cloth,1
+Gnomestomper,bank,5116,Long Tail Feather,3
+Gnomestomper,bank,118,Minor Healing Potion,6
+Gnomestomper,bank,1206,Moss Agate,2
+Gnomestomper,bank,730,Murloc Eye,2
+Gnomestomper,bank,1468,Murloc Fin,2
+Gnomestomper,bank,249391,Pyrite,2
+Gnomestomper,bank,2835,Rough Stone,4
+Gnomestomper,bank,3013,Scroll of Protection,1
+Gnomestomper,bank,1478,Scroll of Protection II,1
+Gnomestomper,bank,211854,Scroll: OMIT KESA,1
+Gnomestomper,bank,211784,Scroll: WUBBA WUBBA,1
+Gnomestomper,bank,1210,Shadowgem,1
+Gnomestomper,bank,5635,Sharp Claw,2
+Gnomestomper,bank,17057,Shiny Fish Scales,4
+Gnomestomper,bank,2842,Silver Bar,4
+Gnomestomper,bank,5504,Tangy Clam Meat,1
+Gnomestomper,bank,3576,Tin Bar,16
+Gnomestomper,bank,2771,Tin Ore,12
+Ophelia,bags,208800,Baxtan: On Destructive Magics,1
+Ophelia,bags,2996,Bolt of Linen Cloth,2
+Ophelia,bags,4305,Bolt of Silk Cloth,1
+Ophelia,bags,2997,Bolt of Woolen Cloth,2
+Ophelia,bags,6290,Brilliant Smallfish,18
+Ophelia,bags,5088,Control Console Operating Manual,1
+Ophelia,bags,5068,Dried Seeds,1
+Ophelia,bags,2321,Fine Thread,1
+Ophelia,bags,2605,Green Dye,1
+Ophelia,bags,9766,Greenweave Sash,1
+Ophelia,bags,2287,Haunch of Meat,5
+Ophelia,bags,6948,Hearthstone,1
+Ophelia,bags,858,Lesser Healing Potion,1
+Ophelia,bags,10938,Lesser Magic Essence,15
+Ophelia,bags,17056,Light Feather,31
+Ophelia,bags,4592,Longjaw Mud Snapper,45
+Ophelia,bags,2456,Minor Rejuvenation Potion,3
+Ophelia,bags,3382,Minor Troll's Blood Elixir,2
+Ophelia,bags,20744,Minor Wizard Oil,4
+Ophelia,bags,2681,Roasted Boar Meat,8
+Ophelia,bags,6218,Runed Copper Rod,1
+Ophelia,bags,211855,Scroll: STHENIC LUNATE,1
+Ophelia,bags,211853,Scroll: VOCE WELL,1
+Ophelia,bags,3434,Slumber Sand,5
+Ophelia,bags,2680,Spiced Wolf Meat,13
+Ophelia,bags,5165,Sunscale Feather,8
+Ophelia,bank,4345,Pattern: Red Woolen Boots,1
+Ophelia,bank,7005,Skinning Knife,1
+Ophelia,mail,5075,Blood Shard,7
+Ophelia,mail,2316,Dark Leather Cloak,1
+Ophelia,mail,9770,Greenweave Cloak,1
+Ophelia,mail,4234,Heavy Leather,3
+Ophelia,mail,14748,Hulking Leggings,1
+Ophelia,mail,2589,Linen Cloth,78
+Ophelia,mail,12006,Meadow Ring,1
+Ophelia,mail,2455,Minor Mana Potion,2
+Ophelia,mail,252436,Mystic Medium Armor Kit,3
+Ophelia,mail,15348,Pathfinder Bracers,1
+Ophelia,mail,14559,Prospector's Sash,1
+Ophelia,mail,211854,Scroll: OMIT KESA,1
+Ophelia,mail,1210,Shadowgem,1
+Ophelia,mail,4306,Silk Cloth,8
+Ophelia,mail,3182,Spider's Silk,1
+Ophelia,mail,5470,Thunder Lizard Tail,2
+Ophelia,mail,2592,Wool Cloth,57
