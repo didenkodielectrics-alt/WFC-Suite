@@ -1,5 +1,5 @@
 {
- "snapshotSaved": "2026-11-17T04:53:29Z",
+ "snapshotSaved": "2026-11-17T16:18:21Z",
  "checklist": {},
  "characters": {
   "Bitores": {
@@ -995,8 +995,8 @@
    "level": 15,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "0c",
-   "goldCopper": 0,
+   "gold": "1g 1s 37c",
+   "goldCopper": 10137,
    "zone": "Thunder Bluff",
    "subzone": "",
    "professions": [
@@ -1171,7 +1171,213 @@
      "name": "Greater Magic Wand"
     }
    },
-   "bags": [],
+   "bags": [
+    {
+     "id": 208800,
+     "name": "Baxtan: On Destructive Magics",
+     "count": 1
+    },
+    {
+     "id": 2996,
+     "name": "Bolt of Linen Cloth",
+     "count": 2
+    },
+    {
+     "id": 4305,
+     "name": "Bolt of Silk Cloth",
+     "count": 3
+    },
+    {
+     "id": 2997,
+     "name": "Bolt of Woolen Cloth",
+     "count": 14
+    },
+    {
+     "id": 6290,
+     "name": "Brilliant Smallfish",
+     "count": 18
+    },
+    {
+     "id": 5088,
+     "name": "Control Console Operating Manual",
+     "count": 1
+    },
+    {
+     "id": 5068,
+     "name": "Dried Seeds",
+     "count": 1
+    },
+    {
+     "id": 2321,
+     "name": "Fine Thread",
+     "count": 1
+    },
+    {
+     "id": 5527,
+     "name": "Goblin Deviled Clams",
+     "count": 9
+    },
+    {
+     "id": 11082,
+     "name": "Greater Astral Essence",
+     "count": 2
+    },
+    {
+     "id": 10939,
+     "name": "Greater Magic Essence",
+     "count": 7
+    },
+    {
+     "id": 6948,
+     "name": "Hearthstone",
+     "count": 1
+    },
+    {
+     "id": 4234,
+     "name": "Heavy Leather",
+     "count": 3
+    },
+    {
+     "id": 14748,
+     "name": "Hulking Leggings",
+     "count": 1
+    },
+    {
+     "id": 5500,
+     "name": "Iridescent Pearl",
+     "count": 1
+    },
+    {
+     "id": 858,
+     "name": "Lesser Healing Potion",
+     "count": 1
+    },
+    {
+     "id": 11134,
+     "name": "Lesser Mystic Essence",
+     "count": 1
+    },
+    {
+     "id": 17056,
+     "name": "Light Feather",
+     "count": 31
+    },
+    {
+     "id": 2589,
+     "name": "Linen Cloth",
+     "count": 78
+    },
+    {
+     "id": 4592,
+     "name": "Longjaw Mud Snapper",
+     "count": 20
+    },
+    {
+     "id": 2455,
+     "name": "Minor Mana Potion",
+     "count": 2
+    },
+    {
+     "id": 2456,
+     "name": "Minor Rejuvenation Potion",
+     "count": 3
+    },
+    {
+     "id": 3382,
+     "name": "Minor Troll's Blood Elixir",
+     "count": 2
+    },
+    {
+     "id": 20744,
+     "name": "Minor Wizard Oil",
+     "count": 4
+    },
+    {
+     "id": 6218,
+     "name": "Runed Copper Rod",
+     "count": 1
+    },
+    {
+     "id": 211854,
+     "name": "Scroll: OMIT KESA",
+     "count": 1
+    },
+    {
+     "id": 213546,
+     "name": "Scroll: SHOOBEEDOOP",
+     "count": 1
+    },
+    {
+     "id": 211855,
+     "name": "Scroll: STHENIC LUNATE",
+     "count": 1
+    },
+    {
+     "id": 211853,
+     "name": "Scroll: VOCE WELL",
+     "count": 1
+    },
+    {
+     "id": 1210,
+     "name": "Shadowgem",
+     "count": 1
+    },
+    {
+     "id": 4306,
+     "name": "Silk Cloth",
+     "count": 8
+    },
+    {
+     "id": 2775,
+     "name": "Silver Ore",
+     "count": 2
+    },
+    {
+     "id": 3434,
+     "name": "Slumber Sand",
+     "count": 5
+    },
+    {
+     "id": 5498,
+     "name": "Small Lustrous Pearl",
+     "count": 1
+    },
+    {
+     "id": 21072,
+     "name": "Smoked Sagefish",
+     "count": 19
+    },
+    {
+     "id": 11083,
+     "name": "Soul Dust",
+     "count": 6
+    },
+    {
+     "id": 2680,
+     "name": "Spiced Wolf Meat",
+     "count": 13
+    },
+    {
+     "id": 3182,
+     "name": "Spider's Silk",
+     "count": 2
+    },
+    {
+     "id": 10940,
+     "name": "Strange Dust",
+     "count": 26
+    },
+    {
+     "id": 5470,
+     "name": "Thunder Lizard Tail",
+     "count": 2
+    },
+    {
+     "id": 2592,
+     "name": "Wool Cloth",
+     "count": 19
+    }
+   ],
    "bank": [
     {
      "id": 4345,
@@ -1187,10 +1393,10 @@
    "mail": [],
    "snapshot": {
     "source": "live",
-    "reason": "login",
-    "updated": "2026-11-17T04:53:38Z",
+    "reason": "manual",
+    "updated": "2026-11-17T16:18:27Z",
     "bankSeen": null,
-    "mailSeen": "2026-11-17T04:53:30Z"
+    "mailSeen": "2026-11-17T16:18:15Z"
    }
   }
  }
