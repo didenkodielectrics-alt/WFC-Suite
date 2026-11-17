@@ -16,7 +16,7 @@ local _, ns = ...
 --   updated     = date this plan was written
 
 ns.PlanData = {
-    updated = "2026-11-16 (plan 7, 17:54 AH scan)",
+    updated = "2026-11-16 (plan 7, 17:54 AH scan; scrolls -> Ophelia 22:50)",
     main = "Gnomestomper",
     summary = "Gnomestomper is level 27 in Orgrimmar with 4g 1s 98c; the account has 6g 38s 22c liquid. "
         .. "Today's scan (17:54) lowered several earlier estimates: Firefin Snapper is ~59c (the 84 in Bitores' mail are worth ~50s, not 1.45g), "
@@ -53,6 +53,15 @@ ns.PlanData = {
         { id = "ophelia-boots", section = "Crafters", who = "Ophelia",
           text = "Reach Tailoring 95 (at 93), then learn Red Woolen Boots for skill-ups",
           why = "The pattern is in her bank. The Boots now sell for ~28s against ~27s of mats (31 listed), so they're for skill, not profit" },
+        { id = "ophelia-comprehension", section = "Crafters", who = "Ophelia",
+          text = "Level Comprehension: decipher every mage scroll (+1 each, cap 5x her level = 75 now)",
+          why = "Mage-only skill; scrolls give Cryoblast, familiars, staff imbues. Scrolls and Light Feathers are now routed to her",
+          steps = {
+              "Learn Comprehend Scroll from a mage trainer if she hasn't",
+              "Read her 4 scrolls; Gnomestomper mails her WUBBA WUBBA and OMIT KESA from his bank",
+              "Buy the ~1s scrolls on the AH (KWYJIBO, CWAL, LOWER PING WHOMEVER, 100+ listed each)",
+              "Turn in a library book to Owen Thadd (Undercity) to unlock Study: 1 Light Feather, hourly, 2-4 scrolls (she has 31 feathers)",
+          } },
         { id = "gap-bitores-wheel", section = "Crafters", who = "Bitores",
           text = "Post the 2 Sharpening Wheels (~24s) and craft more: 1 Rough Stone + 1 Copper Bar each",
           why = "Wheels sell ~24s with 99 listed, for ~2s of mats, and he already knows the recipe. He holds 37 Rough Stone; Gnomestomper's 7 Copper Ore make 7 bars. Post 5 at a time" },
@@ -182,7 +191,6 @@ ns.PlanData = {
         [3469]   = { action = "AUCTION", note = "the plan: Copper Chain Boots ~3s on AH (vendor 49c)" },
         [730]    = { action = "AUCTION", note = "the plan: Murloc Eye ~7s 50c ea (2 in bank)" },
         [1206]   = { action = "AUCTION", note = "the plan: Moss Agate ~7s ea (2 in bank)" },
-        [211855] = { action = "AUCTION", note = "the plan: Scroll: STHENIC LUNATE ~5s on AH" },
         [3182]   = { action = "AUCTION", note = "the plan: Spider's Silk ~8s on AH (vendor 3s 87c)" },
         [9766]   = { action = "AUCTION", note = "the plan: Greenweave Sash ~5s 76c on AH (vendor 3s 61c)" },
         [2836]   = { action = "AUCTION", note = "the plan: Coarse Stone ~95c ea (~22s for 23)" },
@@ -211,6 +219,28 @@ ns.PlanData = {
         [21219]  = { action = "KEEP", note = "the plan: learn at Cooking 175, or sell (~46s on AH)" },
         [6369]   = { action = "KEEP", note = "the plan: learn at Cooking 175, or sell (~30s on AH)" },
         [17062]  = { action = "KEEP", note = "the plan: learn at Cooking 175, or sell (~34s on AH)" },
+        -- Mage scrolls -> Ophelia levels Comprehension (+1 per scroll deciphered; cap 5x her level)
+        [211780] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- KWYJIBO
+        [211784] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- WUBBA WUBBA
+        [211785] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- CWAL
+        [211786] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- CHAP BALK WELLES
+        [211787] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- LOWER PING WHOMEVER
+        [211853] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- VOCE WELL
+        [211854] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- OMIT KESA
+        [211855] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- STHENIC LUNATE
+        [213543] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- UPDOG
+        [213544] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- TOPAZ YORAK
+        [213545] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- PEATCHY ATTAX
+        [213546] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- SHOOBEEDOOP
+        [213547] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- THAW WORDS
+        [230946] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- SEENECS FO ROFTS
+        [231304] = { action = "MAIL", to = "Ophelia", note = "the plan: mage scroll for Ophelia's Comprehension" }, -- SERELS PATALIS GNEMIND
+        [281015] = { action = "MAIL", to = "Ophelia", note = "the plan: higher-tier mage scroll (~50s on AH) for Ophelia" }, -- DOST OREM
+        [281016] = { action = "MAIL", to = "Ophelia", note = "the plan: higher-tier mage scroll (~55s on AH) for Ophelia" }, -- FORGOT HOOF THUD
+        [281017] = { action = "MAIL", to = "Ophelia", note = "the plan: higher-tier mage scroll (~33s on AH) for Ophelia" }, -- KEEP CLEF FOCI
+        [281018] = { action = "MAIL", to = "Ophelia", note = "the plan: higher-tier mage scroll (~35s on AH) for Ophelia" }, -- RARE SERVICHI RADAR
+        [215257] = { action = "MAIL", to = "Ophelia", note = "the plan: Scroll of Comprehension (+15 skill, 1 hr) for Ophelia" },
+        [17056]  = { action = "MAIL", to = "Ophelia", note = "the plan: Light Feather = 1 Study (2-4 scrolls) for Ophelia" },
         -- Lead's kit
         [929]    = { action = "KEEP", note = "the plan: Healing Potions for Gnomestomper" },
         [858]    = { action = "MAIL", to = "main", note = "the plan: healing potions for Gnomestomper" },

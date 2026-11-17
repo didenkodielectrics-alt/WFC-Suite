@@ -1,5 +1,5 @@
 {
- "snapshotSaved": "2026-11-16T23:40:30Z",
+ "snapshotSaved": "2026-11-17T04:53:29Z",
  "checklist": {},
  "characters": {
   "Bitores": {
@@ -9,10 +9,10 @@
    "level": 3,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "1g 93s 26c",
-   "goldCopper": 19326,
+   "gold": "67s 87c",
+   "goldCopper": 6787,
    "zone": "Undercity",
-   "subzone": "Undercity",
+   "subzone": "Canals",
    "professions": [
     "Blacksmithing 48/75",
     "Alchemy 33/75"
@@ -110,11 +110,6 @@
      "count": 50
     },
     {
-     "id": 3469,
-     "name": "Copper Chain Boots",
-     "count": 1
-    },
-    {
      "id": 2852,
      "name": "Copper Chain Pants",
      "count": 1
@@ -123,6 +118,11 @@
      "id": 2844,
      "name": "Copper Mace",
      "count": 1
+    },
+    {
+     "id": 1081,
+     "name": "Crisp Spider Meat",
+     "count": 11
     },
     {
      "id": 2924,
@@ -200,14 +200,9 @@
      "count": 1
     },
     {
-     "id": 5543,
-     "name": "Plans: Iridescent Hammer",
-     "count": 1
-    },
-    {
-     "id": 250989,
-     "name": "Recipe: Lesser Mender's Potion",
-     "count": 1
+     "id": 249391,
+     "name": "Pyrite",
+     "count": 3
     },
     {
      "id": 159,
@@ -227,12 +222,7 @@
     {
      "id": 2835,
      "name": "Rough Stone",
-     "count": 19
-    },
-    {
-     "id": 4561,
-     "name": "Scalping Tomahawk",
-     "count": 1
+     "count": 14
     },
     {
      "id": 4409,
@@ -245,19 +235,24 @@
      "count": 1
     },
     {
-     "id": 279944,
-     "name": "Sharpening Wheel",
-     "count": 2
+     "id": 5498,
+     "name": "Small Lustrous Pearl",
+     "count": 3
     },
     {
-     "id": 3820,
-     "name": "Stranglekelp",
+     "id": 3174,
+     "name": "Spider Ichor",
+     "count": 1
+    },
+    {
+     "id": 5470,
+     "name": "Thunder Lizard Tail",
      "count": 1
     },
     {
      "id": 818,
      "name": "Tigerseye",
-     "count": 1
+     "count": 2
     },
     {
      "id": 3576,
@@ -292,69 +287,13 @@
      "count": 1
     }
    ],
-   "mail": [
-    {
-     "id": 2836,
-     "name": "Coarse Stone",
-     "count": 11
-    },
-    {
-     "id": 1081,
-     "name": "Crisp Spider Meat",
-     "count": 11
-    },
-    {
-     "id": 6359,
-     "name": "Firefin Snapper",
-     "count": 84
-    },
-    {
-     "id": 1705,
-     "name": "Lesser Moonstone",
-     "count": 1
-    },
-    {
-     "id": 6358,
-     "name": "Oily Blackmouth",
-     "count": 12
-    },
-    {
-     "id": 249391,
-     "name": "Pyrite",
-     "count": 2
-    },
-    {
-     "id": 2835,
-     "name": "Rough Stone",
-     "count": 14
-    },
-    {
-     "id": 3174,
-     "name": "Spider Ichor",
-     "count": 1
-    },
-    {
-     "id": 3820,
-     "name": "Stranglekelp",
-     "count": 5
-    },
-    {
-     "id": 5470,
-     "name": "Thunder Lizard Tail",
-     "count": 1
-    },
-    {
-     "id": 818,
-     "name": "Tigerseye",
-     "count": 1
-    }
-   ],
+   "mail": [],
    "snapshot": {
     "source": "bagbrother",
-    "reason": "login",
-    "updated": "2026-11-16T17:47:39Z",
+    "reason": "mail",
+    "updated": "2026-11-17T04:53:12Z",
     "bankSeen": null,
-    "mailSeen": "2026-11-16T17:47:21Z"
+    "mailSeen": "2026-11-17T04:53:03Z"
    }
   },
   "Cen": {
@@ -627,7 +566,43 @@
     }
    ],
    "bank": [],
-   "mail": [],
+   "mail": [
+    {
+     "id": 4235,
+     "name": "Heavy Hide",
+     "count": 1
+    },
+    {
+     "id": 4234,
+     "name": "Heavy Leather",
+     "count": 22
+    },
+    {
+     "id": 1288,
+     "name": "Large Venom Sac",
+     "count": 1
+    },
+    {
+     "id": 2318,
+     "name": "Light Leather",
+     "count": 2
+    },
+    {
+     "id": 4232,
+     "name": "Medium Hide",
+     "count": 4
+    },
+    {
+     "id": 2319,
+     "name": "Medium Leather",
+     "count": 96
+    },
+    {
+     "id": 249427,
+     "name": "Pristine Leather",
+     "count": 3
+    }
+   ],
    "snapshot": {
     "source": "bagbrother",
     "reason": "reload",
@@ -640,45 +615,45 @@
    "fullName": "Gnomestomper Greybeard",
    "race": "Orc",
    "class": "HUNTER",
-   "level": 27,
+   "level": 28,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "4g 1s 98c",
-   "goldCopper": 40198,
-   "zone": "Orgrimmar",
-   "subzone": "Valley of Strength",
+   "gold": "7g 18s 69c",
+   "goldCopper": 71869,
+   "zone": "The Barrens",
+   "subzone": "The Crossroads",
    "professions": [
     "First Aid 80/150",
-    "Cooking 168/225",
-    "Mining 124/150",
-    "Fishing 198/225",
-    "Skinning 186/225"
+    "Cooking 225/225",
+    "Mining 125/150",
+    "Fishing 209/225",
+    "Skinning 213/225"
    ],
-   "knownRecipes": 31,
+   "knownRecipes": 35,
    "activeQuests": {
     "1058": {
-     "level": 26,
-     "title": "Jin'Zil's Forest Magic"
+     "title": "Jin'Zil's Forest Magic",
+     "level": 26
     },
     "1087": {
-     "level": 25,
-     "title": "Cenarius' Legacy"
+     "title": "Cenarius' Legacy",
+     "level": 25
     },
     "1131": {
-     "level": 30,
-     "title": "Steelsnap"
+     "title": "Steelsnap",
+     "level": 30
     },
     "1153": {
-     "level": 29,
-     "title": "A New Ore Sample"
+     "title": "A New Ore Sample",
+     "level": 29
     },
     "1195": {
-     "level": 25,
-     "title": "The Sacred Flame"
+     "title": "The Sacred Flame",
+     "level": 25
     },
     "95697": {
-     "level": 31,
-     "title": "Changing Tastes"
+     "title": "Changing Tastes",
+     "level": 31
     }
    },
    "equipped": {
@@ -743,8 +718,12 @@
      "name": "Spritekin Cloak"
     },
     "16": {
-     "id": 6256,
-     "name": "Fishing Pole"
+     "id": 6504,
+     "name": "Wingblade"
+    },
+    "17": {
+     "id": 16886,
+     "name": "Outlaw Sabre"
     },
     "18": {
      "id": 6469,
@@ -753,33 +732,23 @@
    },
    "bags": [
     {
-     "id": 6363,
-     "name": "26 Pound Catfish",
-     "count": 1
+     "id": 6811,
+     "name": "Aquadynamic Fish Lens",
+     "count": 2
     },
     {
-     "id": 2997,
-     "name": "Bolt of Woolen Cloth",
-     "count": 8
+     "id": 3730,
+     "name": "Big Bear Meat",
+     "count": 4
     },
     {
-     "id": 4593,
-     "name": "Bristle Whisker Catfish",
-     "count": 26
-    },
-    {
-     "id": 9451,
-     "name": "Bubbling Water",
-     "count": 1
+     "id": 1081,
+     "name": "Crisp Spider Meat",
+     "count": 2
     },
     {
      "id": 6256,
      "name": "Fishing Pole",
-     "count": 1
-    },
-    {
-     "id": 279965,
-     "name": "Fishing Rack",
      "count": 1
     },
     {
@@ -790,7 +759,7 @@
     {
      "id": 929,
      "name": "Healing Potion",
-     "count": 2
+     "count": 5
     },
     {
      "id": 6948,
@@ -803,49 +772,14 @@
      "count": 17
     },
     {
-     "id": 2678,
-     "name": "Mild Spices",
-     "count": 1
-    },
-    {
      "id": 2901,
      "name": "Mining Pick",
      "count": 1
     },
     {
-     "id": 6358,
-     "name": "Oily Blackmouth",
-     "count": 5
-    },
-    {
-     "id": 249427,
-     "name": "Pristine Leather",
-     "count": 3
-    },
-    {
      "id": 6308,
      "name": "Raw Bristle Whisker Catfish",
-     "count": 16
-    },
-    {
-     "id": 6289,
-     "name": "Raw Longjaw Mud Snapper",
-     "count": 15
-    },
-    {
-     "id": 6361,
-     "name": "Raw Rainbow Fin Albacore",
-     "count": 5
-    },
-    {
-     "id": 6362,
-     "name": "Raw Rockscale Cod",
-     "count": 76
-    },
-    {
-     "id": 6303,
-     "name": "Raw Slitherskin Mackerel",
-     "count": 5
+     "count": 14
     },
     {
      "id": 4603,
@@ -855,32 +789,22 @@
     {
      "id": 3030,
      "name": "Razor Arrow",
-     "count": 1004
+     "count": 635
     },
     {
-     "id": 17062,
-     "name": "Recipe: Mithril Head Trout",
-     "count": 1
-    },
-    {
-     "id": 6369,
-     "name": "Recipe: Rockscale Cod",
-     "count": 1
-    },
-    {
-     "id": 21219,
-     "name": "Recipe: Sagefish Delight",
-     "count": 1
-    },
-    {
-     "id": 14126,
-     "name": "Ritual Amice",
-     "count": 1
+     "id": 4594,
+     "name": "Rockscale Cod",
+     "count": 76
     },
     {
      "id": 21114,
      "name": "Rumsey Rum Dark",
-     "count": 3
+     "count": 5
+    },
+    {
+     "id": 4470,
+     "name": "Simple Wood",
+     "count": 20
     },
     {
      "id": 7005,
@@ -888,24 +812,24 @@
      "count": 1
     },
     {
-     "id": 21072,
-     "name": "Smoked Sagefish",
-     "count": 19
+     "id": 3729,
+     "name": "Soothing Turtle Bisque",
+     "count": 2
     },
     {
      "id": 1708,
      "name": "Sweet Nectar",
-     "count": 40
+     "count": 26
+    },
+    {
+     "id": 3576,
+     "name": "Tin Bar",
+     "count": 1
     },
     {
      "id": 3771,
      "name": "Wild Hog Shank",
-     "count": 20
-    },
-    {
-     "id": 2592,
-     "name": "Wool Cloth",
-     "count": 13
+     "count": 19
     }
    ],
    "bank": [
@@ -1057,11 +981,11 @@
    ],
    "mail": [],
    "snapshot": {
-    "source": "live",
-    "reason": "login",
-    "updated": "2026-11-16T23:56:21Z",
+    "source": "bagbrother",
+    "reason": "mail",
+    "updated": "2026-11-17T04:37:02Z",
     "bankSeen": "2026-11-16T02:51:01Z",
-    "mailSeen": "2026-11-16T23:54:06Z"
+    "mailSeen": "2026-11-17T04:36:26Z"
    }
   },
   "Ophelia": {
@@ -1071,47 +995,47 @@
    "level": 15,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "3s 37c",
-   "goldCopper": 337,
-   "zone": "The Barrens",
-   "subzone": "The Crossroads",
+   "gold": "0c",
+   "goldCopper": 0,
+   "zone": "Thunder Bluff",
+   "subzone": "",
    "professions": [
-    "Tailoring 93/150",
+    "Tailoring 97/150",
     "Enchanting 112/150"
    ],
    "knownRecipes": 51,
    "activeQuests": {
     "845": {
-     "title": "The Zhevra",
-     "level": 13
+     "level": 13,
+     "title": "The Zhevra"
     },
     "850": {
-     "title": "Kolkar Leaders",
-     "level": 16
+     "level": 16,
+     "title": "Kolkar Leaders"
     },
     "855": {
-     "title": "Centaur Bracers",
-     "level": 14
+     "level": 14,
+     "title": "Centaur Bracers"
     },
     "865": {
-     "title": "Raptor Horns",
-     "level": 18
+     "level": 18,
+     "title": "Raptor Horns"
     },
     "871": {
-     "title": "Disrupt the Attacks",
-     "level": 12
+     "level": 12,
+     "title": "Disrupt the Attacks"
     },
     "875": {
-     "title": "Harpy Lieutenants",
-     "level": 16
+     "level": 16,
+     "title": "Harpy Lieutenants"
     },
     "877": {
-     "title": "The Stagnant Oasis",
-     "level": 16
+     "level": 16,
+     "title": "The Stagnant Oasis"
     },
     "887": {
-     "title": "Southsea Freebooters",
-     "level": 14
+     "level": 14,
+     "title": "Southsea Freebooters"
     },
     "894": {
      "level": 14,
@@ -1119,24 +1043,24 @@
      "complete": true
     },
     "895": {
-     "title": "WANTED: Baron Longshore",
-     "level": 16
+     "level": 16,
+     "title": "WANTED: Baron Longshore"
     },
     "896": {
-     "title": "Miner's Fortune",
-     "level": 18
+     "level": 18,
+     "title": "Miner's Fortune"
     },
     "899": {
-     "title": "Consumed by Hatred",
-     "level": 20
+     "level": 20,
+     "title": "Consumed by Hatred"
     },
     "959": {
-     "title": "Trouble at the Docks",
-     "level": 18
+     "level": 18,
+     "title": "Trouble at the Docks"
     },
     "962": {
-     "title": "Serpentbloom",
-     "level": 18
+     "level": 18,
+     "title": "Serpentbloom"
     },
     "1061": {
      "level": 17,
@@ -1144,8 +1068,8 @@
      "complete": true
     },
     "1069": {
-     "title": "Deepmoss Spider Eggs",
-     "level": 20
+     "level": 20,
+     "title": "Deepmoss Spider Eggs"
     },
     "1959": {
      "level": 15,
@@ -1153,28 +1077,28 @@
      "complete": true
     },
     "3281": {
-     "title": "Stolen Silver",
-     "level": 18
+     "level": 18,
+     "title": "Stolen Silver"
     },
     "4921": {
-     "title": "Lost in Battle",
-     "level": 20
+     "level": 20,
+     "title": "Lost in Battle"
     },
     "5041": {
-     "title": "Supplies for the Crossroads",
-     "level": 14
+     "level": 14,
+     "title": "Supplies for the Crossroads"
     },
     "92706": {
-     "title": "WANTED: Bruuz",
-     "level": 20
+     "level": 20,
+     "title": "WANTED: Bruuz"
     },
     "97003": {
-     "title": "Chol'aruk the Ravener",
-     "level": 21
+     "level": 21,
+     "title": "Chol'aruk the Ravener"
     },
     "97253": {
-     "title": "Parts and Pieces",
-     "level": 15
+     "level": 15,
+     "title": "Parts and Pieces"
     }
    },
    "equipped": {
@@ -1247,138 +1171,7 @@
      "name": "Greater Magic Wand"
     }
    },
-   "bags": [
-    {
-     "id": 208800,
-     "name": "Baxtan: On Destructive Magics",
-     "count": 1
-    },
-    {
-     "id": 2996,
-     "name": "Bolt of Linen Cloth",
-     "count": 2
-    },
-    {
-     "id": 4305,
-     "name": "Bolt of Silk Cloth",
-     "count": 1
-    },
-    {
-     "id": 2997,
-     "name": "Bolt of Woolen Cloth",
-     "count": 2
-    },
-    {
-     "id": 6290,
-     "name": "Brilliant Smallfish",
-     "count": 18
-    },
-    {
-     "id": 5088,
-     "name": "Control Console Operating Manual",
-     "count": 1
-    },
-    {
-     "id": 5068,
-     "name": "Dried Seeds",
-     "count": 1
-    },
-    {
-     "id": 2321,
-     "name": "Fine Thread",
-     "count": 1
-    },
-    {
-     "id": 2605,
-     "name": "Green Dye",
-     "count": 1
-    },
-    {
-     "id": 9766,
-     "name": "Greenweave Sash",
-     "count": 1
-    },
-    {
-     "id": 2287,
-     "name": "Haunch of Meat",
-     "count": 5
-    },
-    {
-     "id": 6948,
-     "name": "Hearthstone",
-     "count": 1
-    },
-    {
-     "id": 858,
-     "name": "Lesser Healing Potion",
-     "count": 1
-    },
-    {
-     "id": 10938,
-     "name": "Lesser Magic Essence",
-     "count": 15
-    },
-    {
-     "id": 17056,
-     "name": "Light Feather",
-     "count": 31
-    },
-    {
-     "id": 4592,
-     "name": "Longjaw Mud Snapper",
-     "count": 45
-    },
-    {
-     "id": 2456,
-     "name": "Minor Rejuvenation Potion",
-     "count": 3
-    },
-    {
-     "id": 3382,
-     "name": "Minor Troll's Blood Elixir",
-     "count": 2
-    },
-    {
-     "id": 20744,
-     "name": "Minor Wizard Oil",
-     "count": 4
-    },
-    {
-     "id": 2681,
-     "name": "Roasted Boar Meat",
-     "count": 8
-    },
-    {
-     "id": 6218,
-     "name": "Runed Copper Rod",
-     "count": 1
-    },
-    {
-     "id": 211855,
-     "name": "Scroll: STHENIC LUNATE",
-     "count": 1
-    },
-    {
-     "id": 211853,
-     "name": "Scroll: VOCE WELL",
-     "count": 1
-    },
-    {
-     "id": 3434,
-     "name": "Slumber Sand",
-     "count": 5
-    },
-    {
-     "id": 2680,
-     "name": "Spiced Wolf Meat",
-     "count": 13
-    },
-    {
-     "id": 5165,
-     "name": "Sunscale Feather",
-     "count": 8
-    }
-   ],
+   "bags": [],
    "bank": [
     {
      "id": 4345,
@@ -1391,94 +1184,13 @@
      "count": 1
     }
    ],
-   "mail": [
-    {
-     "id": 5075,
-     "name": "Blood Shard",
-     "count": 7
-    },
-    {
-     "id": 2316,
-     "name": "Dark Leather Cloak",
-     "count": 1
-    },
-    {
-     "id": 9770,
-     "name": "Greenweave Cloak",
-     "count": 1
-    },
-    {
-     "id": 4234,
-     "name": "Heavy Leather",
-     "count": 3
-    },
-    {
-     "id": 14748,
-     "name": "Hulking Leggings",
-     "count": 1
-    },
-    {
-     "id": 2589,
-     "name": "Linen Cloth",
-     "count": 78
-    },
-    {
-     "id": 12006,
-     "name": "Meadow Ring",
-     "count": 1
-    },
-    {
-     "id": 2455,
-     "name": "Minor Mana Potion",
-     "count": 2
-    },
-    {
-     "id": 15348,
-     "name": "Pathfinder Bracers",
-     "count": 1
-    },
-    {
-     "id": 14559,
-     "name": "Prospector's Sash",
-     "count": 1
-    },
-    {
-     "id": 211854,
-     "name": "Scroll: OMIT KESA",
-     "count": 1
-    },
-    {
-     "id": 1210,
-     "name": "Shadowgem",
-     "count": 1
-    },
-    {
-     "id": 4306,
-     "name": "Silk Cloth",
-     "count": 8
-    },
-    {
-     "id": 3182,
-     "name": "Spider's Silk",
-     "count": 1
-    },
-    {
-     "id": 5470,
-     "name": "Thunder Lizard Tail",
-     "count": 2
-    },
-    {
-     "id": 2592,
-     "name": "Wool Cloth",
-     "count": 57
-    }
-   ],
+   "mail": [],
    "snapshot": {
-    "source": "bagbrother",
-    "reason": "mail",
-    "updated": "2026-11-16T17:45:24Z",
+    "source": "live",
+    "reason": "login",
+    "updated": "2026-11-17T04:53:38Z",
     "bankSeen": null,
-    "mailSeen": "2026-11-16T17:45:03Z"
+    "mailSeen": "2026-11-17T04:53:30Z"
    }
   }
  }

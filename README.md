@@ -33,6 +33,6 @@ Bank and mail are only as fresh as each character's last visit to a bank or mail
 | 2026-11-15 | 4,565 |
 | 2026-11-16 | 4,895 |
 
-`Market Research.md`, `The Plan.html` and the files in `plan/` were refreshed from the 2026-11-16 17:54 scan.
+`Market Research.md` and `The Plan.html` were refreshed from the 2026-11-16 17:54 scan. Prices in `data/` run through the 22:53 scan, and the files in `plan/` hold the 22:53 character snapshots and the latest plan (mage scrolls and Light Feathers now go to Ophelia).
 
 To refresh: run a full Auctionator scan in game, `/reload`, and regenerate the files.

@@ -583,7 +583,7 @@
  },
  "774": {
   "name": "Malachite",
-  "lastPrice": 20,
+  "lastPrice": 17,
   "days": {
    "2026-11-14": {
     "listed": 340,
@@ -598,7 +598,7 @@
    "2026-11-16": {
     "listed": 818,
     "minBuyout": 25,
-    "lowestSeen": 20
+    "lowestSeen": 17
    },
    "2026-11-13": {
     "listed": null,
@@ -893,7 +893,7 @@
  },
  "818": {
   "name": "Tigerseye",
-  "lastPrice": 105,
+  "lastPrice": 125,
   "days": {
    "2026-11-14": {
     "listed": 205,
@@ -1635,7 +1635,7 @@
  },
  "1081": {
   "name": "Crisp Spider Meat",
-  "lastPrice": 50,
+  "lastPrice": 49,
   "days": {
    "2026-11-14": {
     "listed": 1073,
@@ -1650,7 +1650,7 @@
    "2026-11-16": {
     "listed": 1375,
     "minBuyout": 50,
-    "lowestSeen": null
+    "lowestSeen": 49
    }
   }
  },
@@ -3703,7 +3703,7 @@
  },
  "1705": {
   "name": "Lesser Moonstone",
-  "lastPrice": 2450,
+  "lastPrice": 849,
   "days": {
    "2026-11-14": {
     "listed": 100,
@@ -3718,7 +3718,7 @@
    "2026-11-16": {
     "listed": 571,
     "minBuyout": 2450,
-    "lowestSeen": null
+    "lowestSeen": 849
    },
    "2026-11-13": {
     "listed": null,
@@ -7568,7 +7568,7 @@
  },
  "2304": {
   "name": "Light Armor Kit",
-  "lastPrice": 20,
+  "lastPrice": 16,
   "days": {
    "2026-11-14": {
     "listed": 238,
@@ -7583,7 +7583,7 @@
    "2026-11-16": {
     "listed": 340,
     "minBuyout": 24,
-    "lowestSeen": 20
+    "lowestSeen": 16
    },
    "2026-11-13": {
     "listed": null,
@@ -9476,7 +9476,7 @@
  },
  "2681": {
   "name": "Roasted Boar Meat",
-  "lastPrice": 90,
+  "lastPrice": 76,
   "days": {
    "2026-11-14": {
     "listed": 37,
@@ -9491,7 +9491,7 @@
    "2026-11-16": {
     "listed": 245,
     "minBuyout": 100,
-    "lowestSeen": 90
+    "lowestSeen": 76
    },
    "2026-11-13": {
     "listed": null,
@@ -10518,7 +10518,7 @@
  },
  "2835": {
   "name": "Rough Stone",
-  "lastPrice": 33,
+  "lastPrice": 13,
   "days": {
    "2026-11-14": {
     "listed": 3269,
@@ -10533,7 +10533,7 @@
    "2026-11-16": {
     "listed": 3615,
     "minBuyout": 33,
-    "lowestSeen": null
+    "lowestSeen": 13
    },
    "2026-11-13": {
     "listed": null,
@@ -10544,7 +10544,7 @@
  },
  "2836": {
   "name": "Coarse Stone",
-  "lastPrice": 95,
+  "lastPrice": 58,
   "days": {
    "2026-11-14": {
     "listed": 2842,
@@ -10559,7 +10559,7 @@
    "2026-11-16": {
     "listed": 3060,
     "minBuyout": 140,
-    "lowestSeen": 95
+    "lowestSeen": 58
    },
    "2026-11-13": {
     "listed": null,
@@ -10617,7 +10617,7 @@
  },
  "2841": {
   "name": "Bronze Bar",
-  "lastPrice": 247,
+  "lastPrice": 222,
   "days": {
    "2026-11-14": {
     "listed": 3481,
@@ -10632,7 +10632,7 @@
    "2026-11-16": {
     "listed": 4587,
     "minBuyout": 299,
-    "lowestSeen": 247
+    "lowestSeen": 222
    },
    "2026-11-13": {
     "listed": null,
@@ -10770,7 +10770,7 @@
  },
  "2852": {
   "name": "Copper Chain Pants",
-  "lastPrice": 270,
+  "lastPrice": 220,
   "days": {
    "2026-11-14": {
     "listed": 30,
@@ -10785,7 +10785,7 @@
    "2026-11-16": {
     "listed": 48,
     "minBuyout": 270,
-    "lowestSeen": null
+    "lowestSeen": 220
    },
    "2026-11-13": {
     "listed": null,
@@ -10859,7 +10859,7 @@
  },
  "2862": {
   "name": "Rough Sharpening Stone",
-  "lastPrice": 7,
+  "lastPrice": 8,
   "days": {
    "2026-11-14": {
     "listed": 792,
@@ -12971,7 +12971,7 @@
  },
  "3174": {
   "name": "Spider Ichor",
-  "lastPrice": 29,
+  "lastPrice": 24,
   "days": {
    "2026-11-14": {
     "listed": 460,
@@ -12986,7 +12986,7 @@
    "2026-11-16": {
     "listed": 656,
     "minBuyout": 36,
-    "lowestSeen": 29
+    "lowestSeen": 24
    }
   }
  },
@@ -16578,7 +16578,7 @@
  },
  "3712": {
   "name": "Turtle Meat",
-  "lastPrice": 200,
+  "lastPrice": 193,
   "days": {
    "2026-11-14": {
     "listed": 121,
@@ -16593,7 +16593,7 @@
    "2026-11-16": {
     "listed": 887,
     "minBuyout": 245,
-    "lowestSeen": 200
+    "lowestSeen": 193
    }
   }
  },
@@ -17400,7 +17400,7 @@
  },
  "3820": {
   "name": "Stranglekelp",
-  "lastPrice": 250,
+  "lastPrice": 248,
   "days": {
    "2026-11-14": {
     "listed": 1011,
@@ -17415,7 +17415,7 @@
    "2026-11-16": {
     "listed": 1624,
     "minBuyout": 320,
-    "lowestSeen": 250
+    "lowestSeen": 248
    },
    "2026-11-13": {
     "listed": null,
@@ -23513,7 +23513,7 @@
  },
  "4561": {
   "name": "Scalping Tomahawk",
-  "lastPrice": 377,
+  "lastPrice": 360,
   "days": {
    "2026-11-14": {
     "listed": 23,
@@ -23528,7 +23528,7 @@
    "2026-11-16": {
     "listed": 16,
     "minBuyout": 399,
-    "lowestSeen": 377
+    "lowestSeen": 360
    },
    "2026-11-13": {
     "listed": null,
@@ -28030,7 +28030,7 @@
  },
  "5504": {
   "name": "Tangy Clam Meat",
-  "lastPrice": 340,
+  "lastPrice": 129,
   "days": {
    "2026-11-14": {
     "listed": 1704,
@@ -28045,7 +28045,7 @@
    "2026-11-16": {
     "listed": 285,
     "minBuyout": 340,
-    "lowestSeen": null
+    "lowestSeen": 129
    }
   }
  },
@@ -31073,7 +31073,7 @@
  },
  "6358": {
   "name": "Oily Blackmouth",
-  "lastPrice": 128,
+  "lastPrice": 140,
   "days": {
    "2026-11-14": {
     "listed": 2244,
@@ -31094,7 +31094,7 @@
  },
  "6359": {
   "name": "Firefin Snapper",
-  "lastPrice": 59,
+  "lastPrice": 40,
   "days": {
    "2026-11-14": {
     "listed": 1326,
@@ -31109,7 +31109,7 @@
    "2026-11-16": {
     "listed": 5084,
     "minBuyout": 95,
-    "lowestSeen": 59
+    "lowestSeen": 40
    }
   }
  },
@@ -54705,7 +54705,7 @@
  },
  "10939": {
   "name": "Greater Magic Essence",
-  "lastPrice": 299,
+  "lastPrice": 288,
   "days": {
    "2026-11-14": {
     "listed": 819,
@@ -54720,7 +54720,7 @@
    "2026-11-16": {
     "listed": 412,
     "minBuyout": 358,
-    "lowestSeen": 299
+    "lowestSeen": 288
    },
    "2026-11-13": {
     "listed": null,
@@ -83829,7 +83829,7 @@
  },
  "21071": {
   "name": "Raw Sagefish",
-  "lastPrice": 585,
+  "lastPrice": 68,
   "days": {
    "2026-11-14": {
     "listed": 441,
@@ -83844,7 +83844,7 @@
    "2026-11-16": {
     "listed": 433,
     "minBuyout": 585,
-    "lowestSeen": null
+    "lowestSeen": 68
    }
   }
  },
@@ -84804,7 +84804,7 @@
  },
  "247755": {
   "name": "Elixir of Minor Force",
-  "lastPrice": 98,
+  "lastPrice": 89,
   "days": {
    "2026-11-14": {
     "listed": 132,
@@ -84819,7 +84819,7 @@
    "2026-11-16": {
     "listed": 224,
     "minBuyout": 100,
-    "lowestSeen": 98
+    "lowestSeen": 89
    }
   }
  },
@@ -84925,7 +84925,7 @@
  },
  "248682": {
   "name": "Waylaid Crate: Apprentice Herbs",
-  "lastPrice": 1266,
+  "lastPrice": 874,
   "days": {
    "2026-11-14": {
     "listed": 87,
@@ -84940,7 +84940,7 @@
    "2026-11-16": {
     "listed": 81,
     "minBuyout": 1880,
-    "lowestSeen": 1266
+    "lowestSeen": 874
    }
   }
  },
@@ -85756,7 +85756,7 @@
  },
  "249391": {
   "name": "Pyrite",
-  "lastPrice": 297,
+  "lastPrice": 173,
   "days": {
    "2026-11-14": {
     "listed": 1859,
@@ -85771,7 +85771,7 @@
    "2026-11-16": {
     "listed": 1405,
     "minBuyout": 835,
-    "lowestSeen": 297
+    "lowestSeen": 173
    },
    "2026-11-13": {
     "listed": null,
@@ -87602,7 +87602,7 @@
  },
  "252436": {
   "name": "Mystic Medium Armor Kit",
-  "lastPrice": 2000,
+  "lastPrice": 1848,
   "days": {
    "2026-11-14": {
     "listed": 60,
@@ -87617,7 +87617,7 @@
    "2026-11-16": {
     "listed": 113,
     "minBuyout": 3000,
-    "lowestSeen": 2000
+    "lowestSeen": 1848
    }
   }
  },
@@ -96521,7 +96521,7 @@
  },
  "279944": {
   "name": "Sharpening Wheel",
-  "lastPrice": 2395,
+  "lastPrice": 777,
   "days": {
    "2026-11-15": {
     "listed": 1,
@@ -96531,7 +96531,7 @@
    "2026-11-16": {
     "listed": 99,
     "minBuyout": 2395,
-    "lowestSeen": null
+    "lowestSeen": 777
    },
    "2026-11-13": {
     "listed": null,
@@ -96653,7 +96653,7 @@
  },
  "279960": {
   "name": "Lodestone",
-  "lastPrice": 350,
+  "lastPrice": 200,
   "days": {
    "2026-11-14": {
     "listed": 9,
@@ -96668,7 +96668,7 @@
    "2026-11-16": {
     "listed": 104,
     "minBuyout": 440,
-    "lowestSeen": 350
+    "lowestSeen": 200
    }
   }
  },
