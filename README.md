@@ -31,8 +31,8 @@ Bank and mail are only as fresh as each character's last visit to a bank or mail
 | 2026-11-13 | 1 |
 | 2026-11-14 | 4,025 |
 | 2026-11-15 | 4,565 |
-| 2026-11-16 | 4,386 |
+| 2026-11-16 | 4,895 |
 
-`Market Research.md` and `The Plan.html` were written from the scans up to 2026-11-15; the files in `data/` include 2026-11-16.
+`Market Research.md`, `The Plan.html` and the files in `plan/` were refreshed from the 2026-11-16 17:54 scan.
 
 To refresh: run a full Auctionator scan in game, `/reload`, and regenerate the files.

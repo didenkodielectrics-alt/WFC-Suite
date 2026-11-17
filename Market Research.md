@@ -1,136 +1,98 @@
 # Market Research
 
-*Realm: CAMWOW US2 Realm 10 (RP-PvP), Horde. Compiled 2026-11-15 from Auctionator's saved scans (last saved 20:48) and The Plan's character snapshots. Prices are minimum buyouts. Refresh by running a full Auctionator scan, then `/reload` or log out, and ask for this file to be regenerated.*
+*Realm: CAMWOW US2 Realm 10 (RP-PvP), Horde. Updated 2026-11-16 from Auctionator's 17:54 scan and The Plan's character snapshots (saved 17:56). Prices are each day's lowest minimum buyout. Refresh by running a full Auctionator scan, then `/reload`, and ask for this file to be regenerated.*
 
 ## Characters at the time of writing
 
-| Character | Class / level | Professions | Notes |
-|---|---|---|---|
-| Gnomestomper Greybeard | Orc Hunter 27 | Mining 124, Skinning 186, Fishing 180, Cooking 150, First Aid 80 | Main. Last seen in Stranglethorn, hearthing to Crossroads. |
-| Cen Taurus | Tauren Shaman 10 | Leatherworking 110, Herbalism 27 | |
-| Ophelia Wanderlust | Forsaken Mage 15 | Tailoring 93, Enchanting 112 | |
-| Bitores Mendez | Forsaken Warrior 3 | Blacksmithing 48, Alchemy 33 (cap 75) | Needs character level 10 to train Journeyman (150). |
+| Character | Class / level | Gold | Professions | Notes |
+|---|---|---|---|---|
+| Gnomestomper Greybeard | Orc Hunter 27 | 4g 1s 98c | Mining 124, Skinning 186, Fishing 198, Cooking 168, First Aid 80 | Main. In Orgrimmar. |
+| Bitores Mendez | Forsaken Warrior 3 | 1g 93s 26c | Blacksmithing 48, Alchemy 33 (cap 75) | 11 items still in his mail. |
+| Cen Taurus | Tauren Shaman 10 | 39s 61c | Leatherworking 110, Herbalism 27 | Bank never opened. |
+| Ophelia Wanderlust | Forsaken Mage 15 | 3s 37c | Tailoring 93, Enchanting 112 | 16 items still in her mail. |
 
-All four are Horde on the same realm, so mail between them works.
+All four are Horde on the same realm, so mail between them works. Account total: 6g 38s 22c.
 
 ## Bottom line: the fast-money route
 
-*Updated from the full rescan at 22:02 on 2026-11-15 (4,565 items). Prices fell across most of the market since the 20:48 deep scan; see "What the rescan changed" below.*
+1. **Bitores crafts Sharpening Wheels** (already known): 1 Rough Stone + 1 Copper Bar, about 2s of mats. They sell for **~24s** with 99 listed, so roughly **+20s each**. He holds 37 Rough Stone; Gnomestomper's 7 Copper Ore make 7 bars. Post 5 at a time.
+2. **Ophelia makes Colorful Kilts**: buy the pattern (~7s on the AH, 16 listed). 5 Bolts of Woolen Cloth + 3 Red Dye + Fine Thread, about 32s of mats; Kilts sell for **~68s** with 22 listed, so **+32s each**. The 57 Wool in her mail plus Gnomestomper's 8 Bolts cover several.
+3. **Gnomestomper gathers while leveling.** Today: **Heavy Hide ~12s 70c**, **Gold Ore ~10s**, **Mithril Ore ~8s**, Thick Leather ~6s 44c, Silver Ore ~6s, Iron Ore ~3s 25c. Pyrite is ~3s; keep it rather than vendor it.
+4. **Gnomestomper crafts Fishing Racks** (already known): ~4s 34c of mats, sells **~18s 22c** with 50 listed, so about **+13s each**.
+5. **Clear the mailboxes and sell what's there** (Bitores ~80s, Ophelia over 2g). See "Already in your bags" below.
 
-1. **Gnomestomper gathers while leveling.** That means Thousand Needles now (level 25–35, from Crossroads via Freewind Post; *Steelsnap* and *The Sacred Flame* are there), Stonetalon for *Cenarius' Legacy* and *Jin'Zil's Forest Magic*, then Stranglethorn at 32+.
-   - Skin everything: **Heavy Hide ~12s** (was 17s; 222 listed), **Thick Leather ~8s 40c** later. Heavy Leather has dropped to ~2s.
-   - Mine every vein: **Silver ~7s**, **Iron ~3s 30c** (Mining 125, one point away), **Gold ~9s 70c** (155), **Mithril ~10s** (175).
-   - **Pyrite fell to ~2s 87c** (374 listed). Still keep it rather than vendor it, but it's no longer a big earner.
-2. **Gnomestomper crafts Fishing Racks** (already known): about 4s 75c of mats. Racks now sell for **~17s 50c** with only 13 listed, so roughly **+12s each**. List 3–5 at a time.
-3. **Sulfuric Acid is no longer worth leveling Bitores for.** It crashed from ~40s to **~7s 94c** with 522 listed, so 2 Pyrite + a vial earns about +1s 50c. Level his Alchemy only if you want it for its own sake.
-4. **Small extras, one at a time on thin markets:**
-   - Ophelia: **Colorful Kilt ~80s** (14 listed, ~+45s; the pattern is on the AH at 15s). Red Woolen Boots fell to 39s (~+12s, 29 listed).
-   - Cen: Herbalist's Gloves sell for ~1g (8 listed), but the pattern is Alliance-vendor only and isn't on the AH.
-   - Gnomestomper: Camp Chair ~10s (23 listed, ~+7s; already known).
+### Next up (a few skill points away)
+
+- **Cen: Pilferer's Gloves**, ~1g 25s (5 listed) for ~42s of mats, about **+77s**. Needs Leatherworking ~115; the pattern is a world drop, ~8s on the AH (1 listed).
+- **Cen: Green Leather Armor**, ~75s (14 listed) for ~24s of mats, about **+47s**. Needs Leatherworking ~125; pattern from George Candarte (Leatherworking Supplies, Hillsbrad).
 
 ### Don't bother
 
-- **Raw fish** at your skill: almost all under 1s.
-- **Low herbs:** Silverleaf, Peacebloom, Earthroot and Mageroyal are under 1s. Bruiseweed fell to ~1s and Grave Moss to ~5s.
-- **Fire Oil:** 1,133 listed at 55c.
-- **Most low potions:** Elixir of Minor Defense sells for 5c, Minor Mana Potion 19c.
-- **Rough Copper Vest** (now 2s 50c), **White Woolen Dress** (12s, 70 listed), **White Swashbuckler's Shirt** (29s, below its mats), **Sulfuric Acid** (see above).
+- **Red Woolen Boots**: now ~28s against ~27s of mats. Learn them for Tailoring skill, not profit.
+- **Murloc Scale Belt / Breastplate**: ~20s and ~25s against ~18s and ~29s of mats.
+- **Sulfuric Acid**: ~5s 30c against ~6s of mats. Bitores' Alchemy isn't worth leveling for it.
+- **Cooking for profit**: cooked fish sell for pennies. Gnomestomper's 3 cooking recipes are worth more sold (~1g 10s) than learned, unless you want the skill.
+- **Copper Chain Boots** (~3s vs ~15s of mats), **Wool Bandage** and **Light Leather Quiver** (both sell below mats; make the quiver for Gnomestomper only).
+- **Raw fish** at your skill (Firefin ~59c, Rockscale Cod 5c), **low herbs**, **Fire Oil**, **most low potions**.
 - **Bloated fish from the Fishing Rack.** See the fishing notes.
 
-### What the rescan changed
+### What changed since yesterday
 
-| Item | 20:48 deep scan | 22:02 rescan | Listed now |
+| Item | Nov 15 | Nov 16 | Listed today |
 |---|---|---|---|
-| Sulfuric Acid | 40s | 7s 94c | 522 |
-| Pyrite | 6s 95c | 2s 87c | 374 |
-| Heavy Hide | 17s 65c | 12s | 222 |
-| Heavy Leather | 4s 90c | 2s 16c | 2,537 |
-| Thick Leather | 5s 96c | 8s 40c | 2,284 |
-| Fishing Rack | 20s 13c | 17s 50c | 13 |
-| Stonescale Oil | 9s 88c | 5s 98c | 916 |
-| Grave Moss | 12s 89c | 4s 95c | 468 |
-| Red Woolen Boots | 63s | 39s | 29 |
-| White Woolen Dress | 44s 10c | 12s | 70 |
-| Colorful Kilt | 46s 21c | 80s | 14 |
-| Rough Copper Vest | 18s 20c | 2s 50c | 13 |
-| Recipe: Lesser Mender's Potion | 35s | 50s | 13 |
-| Craftsman's Writ: Herbalist's Gloves | 99s | 29s 99c | 22 |
+| Sharpening Wheel | 10s | 23s 95c | 99 |
+| Lesser Moonstone | 5s 99c | 24s 50c | 571 |
+| Grave Moss | 4s 95c | 11s 95c | 836 |
+| Pilferer's Gloves | 90s | 1g 25s | 5 |
+| Meadow Ring | 30s | 50s 99c | 6 |
+| Colorful Kilt | 80s | 68s | 22 |
+| Red Woolen Boots | 39s | 28s | 31 |
+| Heavy Stock | 44s 56c | 23s 52c | 24 |
+| Mithril Ore | 10s | 8s | 2,253 |
+| Thick Leather | 8s 40c | 6s 44c | 2,121 |
+| Sulfuric Acid | 7s 94c | 5s 30c | 520 |
+| Lucky Charm | 28s 40c | 14s 97c | 73 |
 
-The tables further down ("Market data") still show the 20:48 deep scan. Treat their prices as an upper bound.
+Hulking Leggings (1g 86s) and White Swashbuckler's Shirt (80s) each have a single listing today, so those prices are one seller's asking price, not the market.
+
+The tables further down ("Market data") are from the 2026-11-14 deep scan. Treat them as background only.
 
 ## Supply gaps: thin or empty on the AH
 
-*Added 2026-11-15 from the same Auctionator data. The deep scan (day 2509) saw 4,025 different items: 1,625 of them had fewer than 5 listed and 1,445 had 5–19. "None" means the item is in no saved scan at all (days 2508–2510).*
-
-**Read this first.** An empty shelf is not proof of demand. Nothing listed means there is no price to check, so every "none" row is a one-item test: craft one, post it, and only make more if it sells. Auctionator also can't tell "nobody listed it" from "it can't be listed". The Forever class sets (Cen's Wisdom's/Trapper's/Brawler's leather, Ophelia's Pristine/Silky/Flame cloth, Bitores' Veteran's/Guard's chain) show no supply because they are Bind on Pickup, so they are left out.
+*From the 2026-11-16 scan. An empty or thin shelf is not proof of demand: list one, and only make more if it sells. Auctionator can't tell "nobody listed it" from "it can't be listed", and the Forever class sets (Wisdom's, Trapper's, Pristine, Veteran's...) are Bind on Pickup, so they're left out. Only recipes a character knows, or ones with a known source, are listed.*
 
 ### 1. Already in your bags: list these now
 
 | Item | Who has it | Listed | AH price | Vendor | Note |
 |---|---|---|---|---|---|
-| Recipe: Lesser Mender's Potion | Bitores | 13 | 50s (was 35s) | | Already a goal |
-| Meadow Ring | Ophelia (mail) | 9 | 30s | 10s 64c | |
-| Craftsman's Writ: Herbalist's Gloves | Cen (mail) | 22 | 29s 99c (was 99s) | | Sell soon; the price is sliding |
-| Hulking Leggings | Ophelia (mail) | 4 | 19s | 15s 50c | About +2s over vendor after the cut |
-| Pathfinder Bracers | Ophelia (mail) | 5 | 14s (was 34s) | 7s 92c | |
-| Dervish Boots | Gnomestomper (bank) | 7 | 15s | 14s 37c | Barely beats vendor; vendor it unless someone wears it |
-| Sharpening Wheel ×2 | Bitores | 1 | 10s (one seller) | | Bitores knows the recipe; mats ~1s 50c |
+| Meadow Ring | Ophelia (mail) | 6 | 50s 99c | 10s 64c | |
+| Plans: Iridescent Hammer | Bitores | 15 | 50s | 4s 50c | Slipping (82s yesterday) |
+| Recipe: Lesser Mender's Potion | Bitores | 15 | 44s | | |
+| Craftsman's Writ: Herbalist's Gloves | Cen | 11 | 35s | | |
+| 26 Pound Catfish | Gnomestomper | 2 | 30s | | |
+| Lesser Moonstone ×2 | Bitores | 571 | 24s 50c | 6s | Was vendor-only yesterday |
+| Sharpening Wheel ×2 | Bitores | 99 | 23s 95c | | And craft more (route step 1) |
+| Pathfinder Bracers | Ophelia (mail) | 7 | 14s | 7s 92c | |
+| Hulking Leggings | Ophelia (mail) | 1 | 1g 86s (one seller) | 15s 50c | ~19s yesterday; price in between |
+| Wild Hog Shank ×20 | Gnomestomper | 26 | 4s 99c | 50c | 50c yesterday: test 3–5 |
 
-### 2. Craft now from cheap mats
-
-| Craft | Who | Listed | AH price | Mats | If it sells | Status |
-|---|---|---|---|---|---|---|
-| Murloc Scale Belt | Cen | 4 (was 6) | 29s (was 48s) | 14s 36c | +13s | Pattern, not a trainer recipe. Horde vendor: Andrew Hilbert (Trade Goods), Silverpine Forest. Also a drop. |
-| Murloc Scale Breastplate | Cen | 13 (was 12) | 32s (was 65s) | 22s 42c | +8s | Pattern, same vendor as the Belt |
-| Colorful Kilt | Ophelia | 14 | 80s | ~30s 50c | +45s | Pattern on the AH at 15s |
-| Red Woolen Boots | Ophelia | 29 (was 9) | 39s (was 63s) | ~25s | +12s | Pattern is in her bank, needs Tailoring 95 |
-| Camp Chair | Gnomestomper | 23 | 10s | 1s 81c | +7s 70c | Known |
-| Sharpening Wheel | Bitores | 1 | 10s (one seller) | 1s 49c | +8s, he already holds 2 | Known |
-| Copper Chain Boots | Bitores | 57 | 18s | 11s 20c | +6s | Known |
-
-Thick War Axe (now 30s, mats ~29s) and Rough Copper Vest (now 2s 50c) dropped off this list after the rescan.
-
-- Only recipes a character already knows, or Classic recipes with a known source, are listed here. New Forever recipes whose trainer or pattern location isn't in the data are left out.
-- **Murloc Scale prices fell on the 21:56 check (2026-11-15):** Belt 48s → 29s, Breastplate 65s → 32s. That leaves about +13s and +8s per craft before the cost of the patterns, so this is no longer worth a trip to Silverpine on its own.
-- Both Murloc Scale crafts are held back by **Slimy Murloc Scale: only 36 listed at 1s 25c.** Belt (8 scales) plus Breastplate (12) needs 20 scales, about 25s for the lot. Buy them before someone else does, or farm them (section 3).
-
-### 3. Gather or farm with Gnomestomper
+### 2. Gather or farm with Gnomestomper
 
 | Item | Listed | AH price | How |
 |---|---|---|---|
-| Heavy Hide | 222 | 12s (was 17s 65c) | Skinning, already in the plan. |
-| Red Whelp Scale | 131 | 11s (was 20s) | Skinned from red whelps; Skinning 186 is enough. |
-| Thick Murloc Scale | 98 | 5s | Murlocs in the 30s, on the way through Stranglethorn. |
-| Slimy Murloc Scale | 94 (was 36) | 1s 95c | Drops from low-20s murlocs. Only worth keeping if Cen makes the Murloc Scale pieces. |
+| Heavy Hide | 123 | 12s 70c | Skinning, already in the plan. |
+| Red Whelp Scale | 62 | 11s 95c | Skinned from red whelps; Skinning 186 is enough. |
+| Grave Moss | 836 | 11s 95c | Herbalism 120, so not yet (Cen is 27). |
 
-Small Egg fell from 8s to ~3s (163 listed) and is no longer worth going out of the way for.
+Small Egg (~1s 80c) and Slimy Murloc Scale (~1s 55c) are no longer worth a detour.
 
-Where these drop is from Classic memory (Wetlands has red whelps, raptors and Bluegill murlocs in one zone at level 20–25; Hillsbrad's coast has murlocs too). Look the item up in WFC_Database before making the trip.
+### 3. Vendor shelf check
 
-### 4. Vendor shelf checks
+Wooden Stock sells for ~7s 87c (24 listed) against a Classic vendor price of ~2s. Forever's vendor price may differ, so read it before buying. Heavy Stock fell to ~23s 52c, too close to its ~20s vendor price.
 
-These are sold by vendors you have already visited, and the AH price is well above the Classic vendor price. Forever's vendor prices may differ, so read the vendor's price before buying.
+### 4. Out of reach for now
 
-| Item | Listed | AH price | Classic vendor price |
-|---|---|---|---|
-| Heavy Stock | 32 | 44s 56c | ~20s |
-| Wooden Stock | 60 | 7s 90c | ~2s |
-| Yellow Dye | 1 | 8s | ~5s |
-
-Silken Thread fell to ~8s with 100 listed, below the Classic vendor price, so it's off the list.
-
-### 5. Soon: a few skill points away
-
-| Craft | Who | Listed | AH price | Mats | If it sells | Needs |
-|---|---|---|---|---|---|---|
-| Green Leather Armor | Cen | 7 | 80s | ~35s | +40s | Leatherworking ~125 (he is 110) |
-| Pilferer's Gloves | Cen | 6 | 90s | ~70s | +15s | Leatherworking ~115 |
-
-"Needs" is estimated from the colour thresholds, because learn ranks aren't in the data. Both need a pattern, per QuestieDB's item data: Pattern: Green Leather Armor is sold by George Candarte (Leatherworking Supplies, Hillsbrad, Horde), and Pattern: Pilferer's Gloves is a world drop that's on the AH at ~8s (3 listed). Pattern: Herbalist's Gloves is only sold by an Alliance vendor (Harlown Darkweave, Ashenvale), so for Horde it's AH-only and none is listed. White Swashbuckler's Shirt dropped off this list: it now sells for 29s, below its ~32s of mats.
-
-### 6. Out of reach for now
-
-Thin and pricey, but they come from level 35–45+ zones or higher skill: Long Elegant Feather (32 listed, 80s), Elemental Air (42, 2g on the deep scan but 25s on the latest), Large Raw Mightfish (74, 35s), Scorpid Scale (32, 25s), Raw Whitescale Salmon (40, 20s), Golden Pearl (95, 3g 80s).
+Higher-level zones or skill: Golden Pearl (72 listed, 2g 9s 99c), Long Elegant Feather (192, 25s), Raw Whitescale Salmon (557, 16s), Scorpid Scale (208, 15s), Large Raw Mightfish (93, 15s), Elemental Air (88, 7s).
 
 ## Reading the data
 
@@ -219,7 +181,7 @@ The **Learn at** column is the Classic training rank (approximate). **Orange unt
 
 ## Market data (Auctionator)
 
-Scan days in the data: 2508, 2509 (the deep scan), and 2510. These are Auctionator day numbers. The tables below were built when day 2510 was a partial scan (saved 20:48); a full rescan at 22:02 has since replaced it, and its key prices are in "What the rescan changed" near the top.
+These tables are from the 2026-11-14 deep scan (Auctionator day 2509) and an early, partial 2026-11-15 scan. Newer scans exist (2026-11-15 22:02 and 2026-11-16 17:54); their key prices are in "What changed since yesterday" near the top, and the full price list is in the WOWForeverMarketData repo.
 
 ### Raw fish
 
@@ -345,6 +307,8 @@ Scan days in the data: 2508, 2509 (the deep scan), and 2510. These are Auctionat
 
 
 ## Craft margins per character
+
+*Calculated from the 2026-11-14 deep scan. For current numbers use "Bottom line" and "Don't bother" at the top; several of these (Red Woolen Boots, White Woolen Dress, Rough Copper Vest, Murloc Scale pieces, Sulfuric Acid) no longer pay.*
 
 How it's calculated:
 - Profit = product price × average quantity × 0.95 (AH cut) − reagent cost.

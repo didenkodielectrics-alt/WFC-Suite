@@ -1,5 +1,5 @@
 {
- "snapshotSaved": "2026-11-16T04:05:39Z",
+ "snapshotSaved": "2026-11-16T23:40:30Z",
  "checklist": {},
  "characters": {
   "Bitores": {
@@ -9,10 +9,10 @@
    "level": 3,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "41s 1c",
-   "goldCopper": 4101,
+   "gold": "1g 93s 26c",
+   "goldCopper": 19326,
    "zone": "Undercity",
-   "subzone": "Canals",
+   "subzone": "Undercity",
    "professions": [
     "Blacksmithing 48/75",
     "Alchemy 33/75"
@@ -352,9 +352,9 @@
    "snapshot": {
     "source": "bagbrother",
     "reason": "login",
-    "updated": "2026-11-15T19:54:04Z",
+    "updated": "2026-11-16T17:47:39Z",
     "bankSeen": null,
-    "mailSeen": "2026-11-15T19:53:56Z"
+    "mailSeen": "2026-11-16T17:47:21Z"
    }
   },
   "Cen": {
@@ -364,8 +364,8 @@
    "level": 10,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "0c",
-   "goldCopper": 0,
+   "gold": "39s 61c",
+   "goldCopper": 3961,
    "zone": "Thunder Bluff",
    "subzone": "",
    "professions": [
@@ -375,28 +375,28 @@
    "knownRecipes": 31,
    "activeQuests": {
     "743": {
-     "level": 8,
-     "title": "Dangers of the Windfury"
+     "title": "Dangers of the Windfury",
+     "level": 8
     },
     "744": {
-     "level": 11,
-     "title": "Preparation for Ceremony"
+     "title": "Preparation for Ceremony",
+     "level": 11
     },
     "746": {
-     "level": 8,
-     "title": "Dwarven Digging"
+     "title": "Dwarven Digging",
+     "level": 8
     },
     "758": {
-     "level": 8,
-     "title": "Thunderhorn Cleansing"
+     "title": "Thunderhorn Cleansing",
+     "level": 8
     },
     "764": {
-     "level": 10,
-     "title": "The Venture Co."
+     "title": "The Venture Co.",
+     "level": 10
     },
     "765": {
-     "level": 12,
-     "title": "Supervisor Fizsprocket"
+     "title": "Supervisor Fizsprocket",
+     "level": 12
     },
     "772": {
      "level": 7,
@@ -404,8 +404,8 @@
      "complete": true
     },
     "861": {
-     "level": 10,
-     "title": "The Hunter's Way"
+     "title": "The Hunter's Way",
+     "level": 10
     },
     "2984": {
      "level": 10,
@@ -413,20 +413,20 @@
      "complete": true
     },
     "76160": {
-     "level": 11,
-     "title": "Stalk With The Earthmother"
+     "title": "Stalk With The Earthmother",
+     "level": 11
     },
     "94240": {
-     "level": 60,
-     "title": "Craftsman's Writ: Herbalist's Gloves"
+     "title": "Craftsman's Writ: Herbalist's Gloves",
+     "level": 60
     },
     "98427": {
-     "level": 12,
-     "title": "Ceasing Operations"
+     "title": "Ceasing Operations",
+     "level": 12
     },
     "99080": {
-     "level": 11,
-     "title": "Drive Them Out"
+     "title": "Drive Them Out",
+     "level": 11
     }
    },
    "equipped": {
@@ -479,11 +479,157 @@
      "name": "Flanged Mace"
     }
    },
-   "bags": [],
+   "bags": [
+    {
+     "id": 14114,
+     "name": "Aboriginal Footwraps",
+     "count": 1
+    },
+    {
+     "id": 3198,
+     "name": "Battering Hammer",
+     "count": 1
+    },
+    {
+     "id": 6290,
+     "name": "Brilliant Smallfish",
+     "count": 12
+    },
+    {
+     "id": 2320,
+     "name": "Coarse Thread",
+     "count": 2
+    },
+    {
+     "id": 264040,
+     "name": "Craftsman's Writ: Herbalist's Gloves",
+     "count": 1
+    },
+    {
+     "id": 4231,
+     "name": "Cured Light Hide",
+     "count": 10
+    },
+    {
+     "id": 5175,
+     "name": "Earth Totem",
+     "count": 1
+    },
+    {
+     "id": 5997,
+     "name": "Elixir of Minor Defense",
+     "count": 2
+    },
+    {
+     "id": 2454,
+     "name": "Elixir of Minor Strength",
+     "count": 1
+    },
+    {
+     "id": 2315,
+     "name": "Gray Leather Boots",
+     "count": 3
+    },
+    {
+     "id": 6948,
+     "name": "Hearthstone",
+     "count": 1
+    },
+    {
+     "id": 4234,
+     "name": "Heavy Leather",
+     "count": 2
+    },
+    {
+     "id": 3385,
+     "name": "Lesser Mana Potion",
+     "count": 4
+    },
+    {
+     "id": 2304,
+     "name": "Light Armor Kit",
+     "count": 10
+    },
+    {
+     "id": 17056,
+     "name": "Light Feather",
+     "count": 2
+    },
+    {
+     "id": 783,
+     "name": "Light Hide",
+     "count": 2
+    },
+    {
+     "id": 2318,
+     "name": "Light Leather",
+     "count": 41
+    },
+    {
+     "id": 4232,
+     "name": "Medium Hide",
+     "count": 3
+    },
+    {
+     "id": 2319,
+     "name": "Medium Leather",
+     "count": 37
+    },
+    {
+     "id": 206176,
+     "name": "Mortar and Pestle",
+     "count": 1
+    },
+    {
+     "id": 249428,
+     "name": "Pristine Hide",
+     "count": 2
+    },
+    {
+     "id": 249427,
+     "name": "Pristine Leather",
+     "count": 15
+    },
+    {
+     "id": 1210,
+     "name": "Shadowgem",
+     "count": 3
+    },
+    {
+     "id": 5635,
+     "name": "Sharp Claw",
+     "count": 1
+    },
+    {
+     "id": 10940,
+     "name": "Strange Dust",
+     "count": 13
+    },
+    {
+     "id": 5415,
+     "name": "Thunderhorn Cleansing Totem",
+     "count": 1
+    },
+    {
+     "id": 818,
+     "name": "Tigerseye",
+     "count": 1
+    },
+    {
+     "id": 4823,
+     "name": "Water of the Seers",
+     "count": 1
+    },
+    {
+     "id": 2592,
+     "name": "Wool Cloth",
+     "count": 1
+    }
+   ],
    "bank": [],
    "mail": [],
    "snapshot": {
-    "source": "live",
+    "source": "bagbrother",
     "reason": "reload",
     "updated": "2026-11-16T04:08:05Z",
     "bankSeen": null,
@@ -497,10 +643,10 @@
    "level": 27,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "3g 0s 57c",
-   "goldCopper": 30057,
-   "zone": "Stonetalon Mountains",
-   "subzone": "Sun Rock Retreat",
+   "gold": "4g 1s 98c",
+   "goldCopper": 40198,
+   "zone": "Orgrimmar",
+   "subzone": "Valley of Strength",
    "professions": [
     "First Aid 80/150",
     "Cooking 168/225",
@@ -511,28 +657,28 @@
    "knownRecipes": 31,
    "activeQuests": {
     "1058": {
-     "title": "Jin'Zil's Forest Magic",
-     "level": 26
+     "level": 26,
+     "title": "Jin'Zil's Forest Magic"
     },
     "1087": {
-     "title": "Cenarius' Legacy",
-     "level": 25
+     "level": 25,
+     "title": "Cenarius' Legacy"
     },
     "1131": {
-     "title": "Steelsnap",
-     "level": 30
+     "level": 30,
+     "title": "Steelsnap"
     },
     "1153": {
-     "title": "A New Ore Sample",
-     "level": 29
+     "level": 29,
+     "title": "A New Ore Sample"
     },
     "1195": {
-     "title": "The Sacred Flame",
-     "level": 25
+     "level": 25,
+     "title": "The Sacred Flame"
     },
     "95697": {
-     "title": "Changing Tastes",
-     "level": 31
+     "level": 31,
+     "title": "Changing Tastes"
     }
    },
    "equipped": {
@@ -607,9 +753,19 @@
    },
    "bags": [
     {
+     "id": 6363,
+     "name": "26 Pound Catfish",
+     "count": 1
+    },
+    {
+     "id": 2997,
+     "name": "Bolt of Woolen Cloth",
+     "count": 8
+    },
+    {
      "id": 4593,
      "name": "Bristle Whisker Catfish",
-     "count": 27
+     "count": 26
     },
     {
      "id": 9451,
@@ -617,9 +773,14 @@
      "count": 1
     },
     {
-     "id": 5478,
-     "name": "Dig Rat Stew",
-     "count": 5
+     "id": 6256,
+     "name": "Fishing Pole",
+     "count": 1
+    },
+    {
+     "id": 279965,
+     "name": "Fishing Rack",
+     "count": 1
     },
     {
      "id": 4471,
@@ -652,9 +813,9 @@
      "count": 1
     },
     {
-     "id": 16886,
-     "name": "Outlaw Sabre",
-     "count": 1
+     "id": 6358,
+     "name": "Oily Blackmouth",
+     "count": 5
     },
     {
      "id": 249427,
@@ -662,9 +823,19 @@
      "count": 3
     },
     {
+     "id": 6308,
+     "name": "Raw Bristle Whisker Catfish",
+     "count": 16
+    },
+    {
      "id": 6289,
      "name": "Raw Longjaw Mud Snapper",
-     "count": 7
+     "count": 15
+    },
+    {
+     "id": 6361,
+     "name": "Raw Rainbow Fin Albacore",
+     "count": 5
     },
     {
      "id": 6362,
@@ -672,9 +843,14 @@
      "count": 76
     },
     {
+     "id": 6303,
+     "name": "Raw Slitherskin Mackerel",
+     "count": 5
+    },
+    {
      "id": 4603,
      "name": "Raw Spotted Yellowtail",
-     "count": 16
+     "count": 31
     },
     {
      "id": 3030,
@@ -694,6 +870,11 @@
     {
      "id": 21219,
      "name": "Recipe: Sagefish Delight",
+     "count": 1
+    },
+    {
+     "id": 14126,
+     "name": "Ritual Amice",
      "count": 1
     },
     {
@@ -720,11 +901,6 @@
      "id": 3771,
      "name": "Wild Hog Shank",
      "count": 20
-    },
-    {
-     "id": 6504,
-     "name": "Wingblade",
-     "count": 1
     },
     {
      "id": 2592,
@@ -881,11 +1057,11 @@
    ],
    "mail": [],
    "snapshot": {
-    "source": "bagbrother",
-    "reason": "mail",
-    "updated": "2026-11-16T03:36:40Z",
+    "source": "live",
+    "reason": "login",
+    "updated": "2026-11-16T23:56:21Z",
     "bankSeen": "2026-11-16T02:51:01Z",
-    "mailSeen": "2026-11-16T02:54:34Z"
+    "mailSeen": "2026-11-16T23:54:06Z"
    }
   },
   "Ophelia": {
@@ -895,8 +1071,8 @@
    "level": 15,
    "faction": "Horde",
    "realm": "CAMWOW US2 Realm 10 RP PvP",
-   "gold": "3s 67c",
-   "goldCopper": 367,
+   "gold": "3s 37c",
+   "goldCopper": 337,
    "zone": "The Barrens",
    "subzone": "The Crossroads",
    "professions": [
@@ -1257,11 +1433,6 @@
      "count": 2
     },
     {
-     "id": 252436,
-     "name": "Mystic Medium Armor Kit",
-     "count": 3
-    },
-    {
      "id": 15348,
      "name": "Pathfinder Bracers",
      "count": 1
@@ -1305,9 +1476,9 @@
    "snapshot": {
     "source": "bagbrother",
     "reason": "mail",
-    "updated": "2026-11-14T23:31:54Z",
+    "updated": "2026-11-16T17:45:24Z",
     "bankSeen": null,
-    "mailSeen": "2026-11-14T23:31:41Z"
+    "mailSeen": "2026-11-16T17:45:03Z"
    }
   }
  }
