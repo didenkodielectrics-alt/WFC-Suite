@@ -105,8 +105,15 @@ local SKIP_TYPES = { Button = true, CheckButton = true, EditBox = true, ScrollFr
     Model = true, MessageFrame = true, ScrollingMessageFrame = true, SimpleHTML = true, Cooldown = true,
     ColorSelect = true, Minimap = true, GameTooltip = true }
 
+-- Pictures that ARE the content (the flight map, a zone map) stay: anything whose name says map.
+local function isMapArt(obj)
+    local ok, name = pcall(function() return obj.GetDebugName and obj:GetDebugName() end)
+    return ok and type(name) == "string" and name:lower():find("map") ~= nil
+end
+
 local function deepFade(rec, frame, depth, mode)
     if depth > 4 or isForbidden(frame) or own[frame] then return end
+    if depth > 1 and isMapArt(frame) then return end
     rec.deep = rec.deep or {}
     local okR, regions = pcall(function() return { frame:GetRegions() } end)
     if okR then
@@ -115,7 +122,7 @@ local function deepFade(rec, frame, depth, mode)
                 local okL, layer = pcall(r.GetDrawLayer, r)
                 local isTex = isObjectType(r, "Texture")
                 if okL and isTex and (layer == "BORDER" or (layer == "BACKGROUND" and mode ~= "border"))
-                    and rec.deep[r] == nil and rec.faded[r] == nil then
+                    and rec.deep[r] == nil and rec.faded[r] == nil and not isMapArt(r) then
                     local okA, a = pcall(r.GetAlpha, r)
                     rec.deep[r] = okA and a or 1
                     pcall(r.SetAlpha, r, 0)

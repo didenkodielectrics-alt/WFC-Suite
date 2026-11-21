@@ -48,6 +48,9 @@ local TOOLTIP_OPTS = { alpha = 0.95, noTitleBand = true, noOrnaments = true, noT
 -- Windows whose pages are printed in dark ink: the Modern / Futuristic deep fade keeps their
 -- parchment (only frame chrome goes) so the text stays readable.
 local INK_PAGES = { SpellBookFrame = true, PlayerSpellsFrame = true, OpenMailFrame = true }
+-- Windows whose background IS the content (the flight map, the tabard designer's preview):
+-- no deep fade at all, only the theme's frame goes around them.
+local PICTURES = { TaxiFrame = true, TabardFrame = true }
 
 for _, name in ipairs(CORE) do
     local opts = { noTopLeft = true }
@@ -57,6 +60,7 @@ for _, name in ipairs(CORE) do
         opts.questLogParchment = true
     end
     if INK_PAGES[name] then opts.deep = "border" end
+    if PICTURES[name] then opts.deep = false end
     Skin:Register(name, "core", opts)
 end
 for _, name in ipairs(ECONOMY) do Skin:Register(name, "economy", { noTopLeft = true }) end
@@ -111,7 +115,10 @@ local function autoRegister(name)
     if not (ok and secure) then return end
     local okT, kind = pcall(f.GetObjectType, f)
     if not (okT and kind == "Frame") or not looksLikeWindow(f) then return end
-    Skin:Register(name, "core", { noTopLeft = true, auto = true })
+    local opts = { noTopLeft = true, auto = true }
+    -- map windows (flight maps and the like): their background is the map itself
+    if name:lower():find("map") or name:find("Taxi") then opts.deep = false end
+    Skin:Register(name, "core", opts)
     Skin:Watch(name)
 end
 
