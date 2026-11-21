@@ -85,4 +85,7 @@ function Disenchant.Value(results, price)
     return total, best
 end
 
+-- Shared with The Plan (gear advice: disenchant vs save vs sell).
+if WFC and WFC.ItemTips then WFC.ItemTips.Disenchant = Disenchant end
+
 return Disenchant
