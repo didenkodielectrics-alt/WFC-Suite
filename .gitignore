@@ -1,8 +1,3 @@
 WFC_Plan/
 *.bak
 *.lua.bak
-
-# Theme music: players supply their own songs; only the generated silence.mp3 ships
-WFC_OverlayRevamp/Media/Music/*.mp3
-WFC_OverlayRevamp/Media/Music/*.ogg
-!WFC_OverlayRevamp/Media/Music/silence.mp3

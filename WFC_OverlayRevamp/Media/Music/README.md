@@ -1,6 +1,24 @@
 # Theme music
 
-The **Panelka** theme shuffles songs from this folder in place of the zone music while it's the active theme. No music ships with the addon, so supply your own copies.
+The **Panelka** theme shuffles songs from this folder in place of the zone music while it's the active theme.
+
+## Credits
+
+The bundled songs come from the **YouTube Audio Library** and are marked free to use. Some Audio Library tracks require the artist to be credited, so fill in each row from the track's Audio Library page.
+
+| File | Title | Artist | License |
+|---|---|---|---|
+| `toska.mp3` | | | YouTube Audio Library, free to use |
+| `track1.mp3` | | | YouTube Audio Library, free to use |
+| `track2.mp3` | | | YouTube Audio Library, free to use |
+| `track3.mp3` | | | YouTube Audio Library, free to use |
+| `track4.mp3` | | | YouTube Audio Library, free to use |
+| `track5.mp3` | | | YouTube Audio Library, free to use |
+| `track6.mp3` | | | YouTube Audio Library, free to use |
+
+`silence.mp3` was generated for the addon and isn't a song.
+
+## Adding your own songs
 
 1. Put your songs here. WoW can't list a folder, so these are the only names it looks for:
    - `toska.mp3`
