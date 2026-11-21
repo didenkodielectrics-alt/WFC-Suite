@@ -23,7 +23,7 @@ Styles.INFO = {
     nightdrive   = { name = "Nightdrive", desc = "Synthwave: neon tubes, sunset grid, palms, stars." },
     wildwood     = { name = "Wildwood", desc = "Glowing forest: vines, bark-gold, fireflies." },
     frostbound   = { name = "Frostbound", desc = "Glacial citadel: ice shards, aurora, falling snow." },
-    panelka      = { name = "Panelka", desc = "Soviet post-punk: concrete blocks, film grain, red." },
+    panelka      = { name = "Panelka", desc = "Zone survival: rusted steel, field scanner, hazard amber." },
 }
 
 ---------------------------------------------------------------------------
