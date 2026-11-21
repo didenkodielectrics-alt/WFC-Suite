@@ -24,4 +24,5 @@ Fonts.lua
 Frames.lua
 Chrome.lua
 ThemeButton.lua
+MusicBar.lua
 Glock.lua

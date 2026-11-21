@@ -440,28 +440,201 @@ function Chrome:Debug()
     local n = 0
     for _, r in ipairs(minimapArt()) do if r then n = n + 1 end end
     WFC:Print("  minimap border pieces:", n, "· action buttons:", nb)
-    WFC:Print("  music:", playing or "none", "· setting", Overlay.settings.music ~= false and "on" or "off")
+    WFC:Print("  music:", Chrome.MusicPlaying and Chrome.MusicPlaying() or "none", "· setting", Overlay.settings.music ~= false and "on" or "off")
 end
 
 ---------------------------------------------------------------------------
--- Music: a pack may name a track (spec.music = { file, name }). The file is the player's own
--- copy, dropped into Media\Music (a new file needs a full WoW restart before the game sees it).
--- PlayMusic loops it in place of the zone music; StopMusic hands back to the game's own.
--- Setting "music" (/wfcui music on|off). Needs the game's Music sound channel on.
+-- Music: a shuffled playlist for packs that name one (spec.music = { file, name }). The songs
+-- are the player's own copies in the same folder as `file` (Media\Music): `file` itself
+-- (toska.mp3) plus track1 ... track20 (.mp3 or .ogg). WoW can't list a folder, so those are the
+-- names it tries; missing ones are skipped instantly. New files need a full WoW restart.
+--   * Each song plays on the Music channel (the music volume slider applies); when it ends the
+--     next one starts. The order is reshuffled every round, never the same song twice in a row.
+--   * While the playlist runs, a silent loop (Media\Music\silence.mp3) holds the zone-music
+--     slot so Blizzard's music doesn't play underneath; StopMusic hands it back afterwards.
+-- Setting "music" (/wfcui music on|off|next). Needs the game's Music sound channel on.
 ---------------------------------------------------------------------------
-local playing
+local MUSIC_EXT = { ".mp3", ".ogg" }
+local MUSIC_TRACKS = 20
+local FALLBACK_SECONDS = 240 -- clients without C_Sound.IsPlaying: move on after this long
+local music = { key = nil, list = {}, order = {}, pos = 0, missing = {}, found = {}, history = {}, hpos = 0 }
+
+local function musicCandidates(M)
+    local list, seen = {}, {}
+    local function add(f) if f and not seen[f] then seen[f] = true; list[#list + 1] = f end end
+    add(M.file)
+    local dir = M.dir or (M.file and M.file:match("^(.*\\)")) or ""
+    for i = 1, M.count or MUSIC_TRACKS do
+        for _, ext in ipairs(MUSIC_EXT) do add(dir .. "track" .. i .. ext) end
+    end
+    return list, dir
+end
+
+local function shortName(f) return f and (f:match("([^\\]+)$") or f) end
+
+local function changed() WFC:Fire("WFC_MUSIC_CHANGED") end
+
+local function stopTrack(fade)
+    if music.handle and StopSound then pcall(StopSound, music.handle, fade or 0) end
+    music.handle, music.track = nil, nil
+end
+
+local function reshuffle()
+    local order = {}
+    for _, f in ipairs(music.list) do if not music.missing[f] then order[#order + 1] = f end end
+    for i = #order, 2, -1 do
+        local j = math.random(i)
+        order[i], order[j] = order[j], order[i]
+    end
+    -- never the same song twice in a row across rounds
+    if #order > 1 and order[1] == music.last then order[1], order[2] = order[2], order[1] end
+    music.order, music.pos = order, 0
+end
+
+local function playFile(file)
+    local ok, willPlay, handle = pcall(PlaySoundFile, file, "Music")
+    if ok and willPlay then
+        music.handle, music.track, music.last, music.started = handle, file, file, GetTime()
+        music.found[file] = true
+        return true
+    end
+    music.missing[file] = true
+    return false
+end
+
+--- Starts the next song: forward through the history first (after going back), then a new
+--- shuffled pick. false when the folder has no songs.
+local function nextTrack()
+    stopTrack()
+    music.paused = false
+    local H = music.history
+    while music.hpos < #H do
+        music.hpos = music.hpos + 1
+        if playFile(H[music.hpos]) then changed() return true end
+    end
+    for _ = 1, #music.list + 1 do
+        if music.pos >= #music.order then
+            reshuffle()
+            if #music.order == 0 then return false end
+        end
+        music.pos = music.pos + 1
+        local file = music.order[music.pos]
+        if playFile(file) then
+            H[#H + 1] = file
+            if #H > 50 then table.remove(H, 1) end
+            music.hpos = #H
+            changed()
+            return true
+        end
+    end
+    return false
+end
+
+--- Back to the song before (restarts the current one when there's no earlier song).
+local function prevTrack()
+    stopTrack()
+    music.paused = false
+    if music.hpos > 1 then music.hpos = music.hpos - 1 end
+    local f = music.history[music.hpos]
+    local ok = f ~= nil and playFile(f)
+    changed()
+    return ok
+end
+
+--- Pause stops the song (WoW can't resume a sound midway); play starts it again from the top.
+--- The zone music stays quiet while paused.
+local function pauseToggle()
+    if music.paused then
+        music.paused = false
+        local f = music.history[music.hpos]
+        if not (f and playFile(f)) then return nextTrack() end
+        changed()
+        return true
+    end
+    stopTrack(300)
+    music.paused = true
+    changed()
+    return true
+end
+
+local musicFrame
+local function stopMusic()
+    stopTrack(1500)
+    if music.silenced and StopMusic then pcall(StopMusic) end
+    music.silenced, music.key, music.paused = false, nil, false
+    if musicFrame then musicFrame:Hide() end
+    changed()
+end
+
+local function startMusic(M)
+    music.list, music.dir = musicCandidates(M)
+    music.missing, music.found, music.order, music.pos, music.last = {}, {}, {}, 0, nil
+    music.history, music.hpos, music.paused = {}, 0, false
+    music.name = M.name
+    if not (PlaySoundFile and nextTrack()) then return false end
+    -- hold the zone-music slot with silence while the playlist plays
+    if PlayMusic and pcall(PlayMusic, music.dir .. "silence.mp3") then music.silenced = true end
+    if not musicFrame then
+        musicFrame = CreateFrame("Frame")
+        local acc = 0
+        musicFrame:SetScript("OnUpdate", function(_, el)
+            acc = acc + el
+            if acc < 1 then return end
+            acc = 0
+            if not music.key or music.paused then return end
+            local ended
+            if music.handle and C_Sound and C_Sound.IsPlaying then
+                local ok, isPlaying = pcall(C_Sound.IsPlaying, music.handle)
+                ended = ok and not isPlaying
+            else
+                ended = GetTime() - (music.started or 0) > FALLBACK_SECONDS
+            end
+            if ended and not nextTrack() then stopMusic() end
+        end)
+    end
+    musicFrame:Show()
+    return true
+end
 
 local function applyMusic(theme)
     local M = theme and theme.pack and theme.pack.spec.music
-    local want = M and Overlay.settings.music ~= false and M.file or nil
-    if want == playing then return end
-    if playing and StopMusic then pcall(StopMusic) end
-    playing = nil
-    if want and PlayMusic then
-        if pcall(PlayMusic, want) then playing = want end
+    local key = M and Overlay.settings.music ~= false and (theme.pack.id .. ":" .. tostring(M.file)) or nil
+    if key == music.key and (key == nil or music.track or music.paused) then return end
+    stopMusic()
+    if key and startMusic(M) then
+        music.key = key
+        changed()
     end
 end
-Chrome.MusicPlaying = function() return playing end
+
+--- Skip to another song (/wfcui music next, the music bar).
+function Chrome:MusicNext()
+    if not music.key then return false end
+    if not nextTrack() then stopMusic() return false end
+    return true
+end
+
+--- Back to the previous song (/wfcui music prev, the music bar).
+function Chrome:MusicPrev()
+    if not music.key then return false end
+    return prevTrack()
+end
+
+--- Pause / play (/wfcui music pause, the music bar).
+function Chrome:MusicPause()
+    if not music.key then return false end
+    return pauseToggle()
+end
+
+--- Current song (file name, also while paused), songs found so far, names missing, active, paused.
+function Chrome:MusicStatus()
+    local found, missing = 0, 0
+    for _ in pairs(music.found) do found = found + 1 end
+    for _ in pairs(music.missing) do missing = missing + 1 end
+    local current = music.track or (music.history and music.history[music.hpos or 0])
+    return shortName(current), found, missing, music.key ~= nil, music.paused == true
+end
+Chrome.MusicPlaying = function() return shortName(music.track) end
 
 function Chrome:Apply()
     local theme = Overlay:Theme()

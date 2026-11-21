@@ -97,7 +97,7 @@ WFC:RegisterEvent("ADDON_LOADED", function(_, name)
         { key = "ambience", label = "Theme ambience",
             tooltip = "Modern: a soft cinematic vignette. Futuristic: amber sky haze and drifting golden motes. Purely visual; never takes the mouse." },
         { key = "music", label = "Theme music",
-            tooltip = "Panelka plays Media\\Music\\toska.mp3 (your own copy) in place of zone music while it's the active theme. A newly added file needs a full WoW restart." },
+            tooltip = "Panelka shuffles your own songs from Media\\Music (toska.mp3 and track1-track20.mp3) in place of zone music while it's the active theme. /wfcui music next skips. Newly added files need a full WoW restart." },
         { key = "wfcHeaderFonts", label = "Use theme header fonts in WFC windows",
             tooltip = "Off: WFC windows keep their own fonts on every character." },
         { key = "ornaments", label = "Ornament intensity", kind = "slider", min = 0, max = 0.55, step = 0.05,
@@ -163,7 +163,22 @@ local function command(msg)
     elseif a == "music" and (b == "on" or b == "off") then
         s.music = b == "on"
         Overlay:Restyle()
-        WFC:Print("Theme music:", b, "· your own track goes in Interface\\AddOns\\WFC_OverlayRevamp\\Media\\Music\\ (see README there)")
+        WFC:Print("Theme music:", b, "· your songs go in Interface\\AddOns\\WFC_OverlayRevamp\\Media\\Music\\ as toska.mp3 and track1-track20.mp3 (see README there)")
+    elseif a == "music" and (b == "next" or b == "skip") then
+        if not (ns.Chrome and ns.Chrome:MusicNext()) then
+            WFC:Print("Theme music: nothing playing (Panelka theme, music on, songs in Media\\Music)")
+        else
+            WFC:Print("Theme music: now playing", (ns.Chrome:MusicStatus()))
+        end
+    elseif a == "music" and (b == "prev" or b == "back") then
+        if not (ns.Chrome and ns.Chrome:MusicPrev()) then WFC:Print("Theme music: nothing playing") end
+    elseif a == "music" and (b == "pause" or b == "play") then
+        if not (ns.Chrome and ns.Chrome:MusicPause()) then WFC:Print("Theme music: nothing playing") end
+    elseif a == "music" and (b == "list" or b == "status" or b == nil) then
+        local track, found, active
+        if ns.Chrome then track, found, _, active = ns.Chrome:MusicStatus() end
+        WFC:Print(("Theme music: %s · playing %s · %d song(s) found so far (names that don't exist are skipped) · /wfcui music next|on|off")
+            :format(active and "shuffle on" or (s.music == false and "off" or "idle"), track or "nothing", found or 0))
     elseif a == "theme" and b then
         local key = b
         for k in pairs(Themes.list) do
@@ -225,7 +240,7 @@ local function command(msg)
         if not WFC.UI:OpenSettings(Overlay.category) then WFC:Print("options panel unavailable; use /wfcui") end
     else
         WFC:Print("/wfcui [style original|originalplus|modern|futuristic|nightdrive|wildwood|frostbound|panelka|themes|theme <race|auto|blizzard>"
-            .. "|ornaments off|subtle|normal|ambience on|off|music on|off|glock [on|off|test]|skin <frame> off|on"
+            .. "|ornaments off|subtle|normal|ambience on|off|music on|off|next|prev|pause|list|glock [on|off|test]|skin <frame> off|on"
             .. "|module fonts|tooltips|core|economy|wfc|chrome off|on|list|debug zones|options]")
     end
 end
