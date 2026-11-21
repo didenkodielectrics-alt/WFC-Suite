@@ -474,10 +474,32 @@ local function shortName(f) return f and (f:match("([^\\]+)$") or f) end
 
 local function changed() WFC:Fire("WFC_MUSIC_CHANGED") end
 
+-- The song handle is saved (SavedVariables): a sound started with PlaySoundFile keeps playing
+-- through /reload, so the next UI session must stop it before starting its own.
+local function saveHandle(h)
+    if Overlay.settings then Overlay.settings.musicHandle = h end
+end
+
 local function stopTrack(fade)
-    if music.handle and StopSound then pcall(StopSound, music.handle, fade or 0) end
+    if music.handle then
+        if StopSound then pcall(StopSound, music.handle, fade or 0) end
+        saveHandle(nil) -- only our own song: a leftover from before /reload stays remembered
+    end
     music.handle, music.track = nil, nil
 end
+
+--- Stops a song left playing by the previous UI session (before /reload).
+local function stopLeftover()
+    local h = Overlay.settings and Overlay.settings.musicHandle
+    if h and StopSound then pcall(StopSound, h, 0) end
+    saveHandle(nil)
+end
+
+-- Loading screens (hearth, portals, instances): the game can briefly report the song as
+-- stopped. Don't advance until a few seconds after the world is back.
+local loadingUntil = 0
+local function loadingScreen() loadingUntil = GetTime() + 1e9 end
+local function worldBack() loadingUntil = GetTime() + 4 end
 
 local function reshuffle()
     local order = {}
@@ -496,6 +518,7 @@ local function playFile(file)
     if ok and willPlay then
         music.handle, music.track, music.last, music.started = handle, file, file, GetTime()
         music.found[file] = true
+        saveHandle(handle)
         return true
     end
     music.missing[file] = true
@@ -567,6 +590,7 @@ local function stopMusic()
 end
 
 local function startMusic(M)
+    stopLeftover() -- a song still playing from before /reload
     music.list, music.dir = musicCandidates(M)
     music.missing, music.found, music.order, music.pos, music.last = {}, {}, {}, 0, nil
     music.history, music.hpos, music.paused = {}, 0, false
@@ -581,15 +605,24 @@ local function startMusic(M)
             acc = acc + el
             if acc < 1 then return end
             acc = 0
-            if not music.key or music.paused then return end
+            if not music.key or music.paused or GetTime() < loadingUntil then return end
             local ended
             if music.handle and C_Sound and C_Sound.IsPlaying then
                 local ok, isPlaying = pcall(C_Sound.IsPlaying, music.handle)
-                ended = ok and not isPlaying
+                -- two checks in a row: a single "not playing" can be a hiccup
+                if ok and not isPlaying then
+                    music.misses = (music.misses or 0) + 1
+                else
+                    music.misses = 0
+                end
+                ended = music.misses >= 2
             else
                 ended = GetTime() - (music.started or 0) > FALLBACK_SECONDS
             end
-            if ended and not nextTrack() then stopMusic() end
+            if ended then
+                music.misses = 0
+                if not nextTrack() then stopMusic() end
+            end
         end)
     end
     musicFrame:Show()
@@ -655,6 +688,11 @@ function Chrome:Apply()
         applyButtons(C.buttons)
     end)
 end
+
+WFC:RegisterEvent("LOADING_SCREEN_ENABLED", loadingScreen)
+WFC:RegisterEvent("LOADING_SCREEN_DISABLED", worldBack)
+WFC:RegisterEvent("PLAYER_LEAVING_WORLD", loadingScreen)
+WFC:RegisterEvent("PLAYER_ENTERING_WORLD", worldBack)
 
 -- The action bar can be rebuilt (Edit Mode, bar settings): re-apply after it settles.
 WFC:RegisterEvent("PLAYER_ENTERING_WORLD", function()
