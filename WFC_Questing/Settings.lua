@@ -12,7 +12,7 @@ ns.Questing = Questing
 Questing.DEFAULTS = {
     dock = true,             -- dock next to the visible quest log
     autoShow = true,         -- open/close together with the quest log while docked
-    lastTab = nil,           -- remember the last selected tab ("active", "next", "dungeons", "skip")
+    lastTab = nil,           -- remember the last selected tab ("active", "next", "dungeons")
     anyZone = false,         -- false = search current zone only; true = search all zones
     quickKeys = true,        -- Space to accept/complete quests, F1-F10 to select rewards
     tutorialOnLaunch = true, -- show the quick tutorial popup in the top-left on game launch

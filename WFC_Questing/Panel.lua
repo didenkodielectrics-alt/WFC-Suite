@@ -16,7 +16,7 @@ ns.Panel = Panel
 local NAME = "WFC_QuestPanel"
 local WIDTH, HEIGHT = 340, 440
 local PAD, ROW_GAP, LINE = 10, 4, 13
-local TABS = { { key = "active", label = "Active" }, { key = "next", label = "Next Up" }, { key = "dungeons", label = "Dungeons" }, { key = "skip", label = "Skip" } }
+local TABS = { { key = "active", label = "Active" }, { key = "next", label = "Next Up" }, { key = "dungeons", label = "Dungeons" } }
 local BAR = 28 -- height of the Dungeons tab's toolbar
 -- Our fonts have no "★" glyph: use the raid-target star icon, present on every client.
 local STAR = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t "
@@ -212,7 +212,7 @@ end
 function Panel:DisplayRows()
     if tab == "dungeons" then return ns.Dungeons:Rows() end
     local list = {}
-    if tab == "skip" then
+    if false then -- the Skip tab was removed (it didn't work well)
         for _, entry in ipairs(Questing:GetSkip()) do
             local c = entry.candidate
             local sub = {}
@@ -331,7 +331,6 @@ local function render()
         frame.tabButtons[1]:SetText(("Active (%d)"):format(activeCount))
         frame.tabButtons[2]:SetText(("Next Up (%d)"):format(nextCount))
         frame.tabButtons[3]:SetText("Dungeons")
-        frame.tabButtons[4]:SetText(("Skip (%d)"):format(#Questing:GetSkip()))
     end
 
     updateAnyZoneButton()
@@ -349,8 +348,6 @@ local function render()
     elseif #items == 0 then
         if tab == "active" then
             msg = "Your quest log is empty."
-        elseif tab == "skip" then
-            msg = "None of your accepted quests need to be skipped."
         elseif not isAnyZone then
             msg = ("No quests in %s. Click 'Any Zone' above."):format(scopeLabel)
         else
@@ -515,7 +512,7 @@ local function create()
     content:SetSize(contentWidth(), 1)
     scroll:SetScrollChild(content)
 
-    -- Dungeons toolbar: dungeon picker, its own map (Atlas-style view), path to the entrance.
+    -- Dungeons toolbar: dungeon picker and its own map (Atlas-style view).
     bar = CreateFrame("Frame", nil, frame)
     bar:SetPoint("TOPLEFT", PAD, -top)
     bar:SetPoint("RIGHT", -PAD, 0)
@@ -536,10 +533,8 @@ local function create()
     end
     bar.picker = barButton("Dungeon", 190, "Choose a dungeon", function(self) ns.Menu:Show(self, ns.Dungeons:MenuItems()) end)
     bar.picker:SetPoint("LEFT", 0, 0)
-    bar.path = barButton("Path", 54, "Path to the entrance", function() ns.Dungeons:PathToEntrance() end)
-    bar.path:SetPoint("RIGHT", 0, 0)
     bar.map = barButton("Map", 50, "The dungeon's map, floors, bosses and your quests", function() ns.Dungeons:ShowMap() end)
-    bar.map:SetPoint("RIGHT", bar.path, "LEFT", -4, 0)
+    bar.map:SetPoint("RIGHT", 0, 0)
     Panel.bar = bar
 
     status = frame:CreateFontString(nil, "OVERLAY")
@@ -586,6 +581,7 @@ local function create()
     end)
     Panel.frame = frame
     local initialTab = Questing.settings and Questing.settings.lastTab
+    if initialTab == "skip" then initialTab = nil end -- that tab was removed
     if not initialTab then
         local activeCount = 0
         for _ in pairs(WFC.Player.active) do activeCount = activeCount + 1 end

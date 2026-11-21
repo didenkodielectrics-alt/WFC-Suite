@@ -15,6 +15,49 @@ function Dungeons:Invalidate()
     details = {}
 end
 
+-- Recommended level ranges, by dungeon area id. They win over the range computed from the mobs
+-- and quests inside (which runs too wide: trash, critters, follow-up quests).
+local LEVELS = {
+    -- Classic dungeons
+    [2437] = { 13, 18 },  -- Ragefire Chasm
+    [718] = { 17, 24 },   -- Wailing Caverns
+    [1581] = { 17, 26 },  -- The Deadmines
+    [209] = { 22, 30 },   -- Shadowfang Keep
+    [719] = { 24, 32 },   -- Blackfathom Deeps
+    [717] = { 24, 32 },   -- The Stockade
+    [721] = { 29, 38 },   -- Gnomeregan
+    [491] = { 29, 38 },   -- Razorfen Kraul
+    [796] = { 28, 45 },   -- Scarlet Monastery (Graveyard 28-38, Library 29-39, Armory 32-42, Cathedral 35-45)
+    [722] = { 37, 46 },   -- Razorfen Downs
+    [1337] = { 41, 51 },  -- Uldaman
+    [1176] = { 44, 54 },  -- Zul'Farrak
+    [2100] = { 46, 55 },  -- Maraudon
+    [1477] = { 50, 60 },  -- The Temple of Atal'Hakkar
+    [1584] = { 52, 60 },  -- Blackrock Depths
+    [1583] = { 55, 60 },  -- Blackrock Spire (Lower 55-60, Upper 58-60)
+    [2557] = { 55, 60 },  -- Dire Maul
+    [2057] = { 58, 60 },  -- Scholomance
+    [2017] = { 58, 60 },  -- Stratholme
+    -- Classic raids
+    [2717] = { 60, 60 }, [2159] = { 60, 60 }, [1977] = { 60, 60 }, [2677] = { 60, 60 },
+    [3429] = { 60, 60 }, [3428] = { 60, 60 }, [3456] = { 60, 60 },
+    -- Battlegrounds
+    [3277] = { 10, 60 },  -- Warsong Gulch
+    [3358] = { 20, 60 },  -- Arathi Basin
+    [2597] = { 51, 60 },  -- Alterac Valley
+    -- The Burning Crusade
+    [3562] = { 60, 62 }, [3713] = { 61, 63 }, [3717] = { 62, 64 }, [3716] = { 63, 65 }, [3792] = { 64, 66 },
+    [3790] = { 65, 67 }, [2367] = { 66, 68 }, [3791] = { 67, 69 }, [3715] = { 70, 70 }, [3789] = { 70, 70 },
+    [3714] = { 70, 70 }, [2366] = { 70, 70 }, [3849] = { 70, 70 }, [3847] = { 70, 70 }, [3848] = { 70, 70 },
+    [4131] = { 70, 70 },
+    [3457] = { 70, 70 }, [3923] = { 70, 70 }, [3836] = { 70, 70 }, [3607] = { 70, 70 }, [3845] = { 70, 70 },
+    [3606] = { 70, 70 }, [3959] = { 70, 70 }, [3805] = { 70, 70 }, [4075] = { 70, 70 },
+    -- Wrath of the Lich King
+    [206] = { 70, 72 }, [4265] = { 71, 73 }, [4196] = { 74, 76 }, [4264] = { 77, 79 },
+    [1196] = { 80, 80 }, [4228] = { 80, 80 }, [4100] = { 80, 80 },
+}
+local NO_RANGE = { [2257] = true, [2917] = true, [2918] = true } -- Deeprun Tram, the PvP halls
+
 local function hostile(card)
     return card.aggro.A or card.aggro.H or not card.friendly
 end
@@ -65,6 +108,12 @@ function Dungeons:Details(dungeonId)
     -- would give Westfall), and Forever has no dungeon maps at all.
     local map = DB.Zones:AreaToUiMap(dungeonId)
     if not WFC.Compat.IsDungeonMap(map) then map = nil end
+    local fixed = LEVELS[dungeonId]
+    if fixed then
+        minLevel, maxLevel = fixed[1], fixed[2]
+    elseif NO_RANGE[dungeonId] then
+        minLevel, maxLevel = nil, nil
+    end
     d = {
         id = dungeonId, name = card.name, isNew = card.isNew, entrances = card.entrances,
         map = map, minLevel = minLevel, maxLevel = maxLevel,
