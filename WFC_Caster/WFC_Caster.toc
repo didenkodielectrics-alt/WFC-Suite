@@ -1,0 +1,15 @@
+## Interface: 16001, 11509
+## Title: WFC Caster |cff4dd9ff(Forever)|r
+## Notes: Hunter dead-zone range indicator, Cheetah/Hawk aspect swap, and Mage AoE cooldown tracker
+## Author: Aleksey
+## Version: 5.2
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/Ability_Hunter_RunningShot
+## Dependencies: WFC_Database
+## SavedVariables: WFC_Caster_Global
+
+Settings.lua
+HunterRange.lua
+MageBar.lua
+HunterAspect.lua

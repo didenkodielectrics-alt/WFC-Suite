@@ -1,0 +1,9 @@
+## Interface: 16001, 11509
+## Title: WFC Suite |cff4dd9ff(Forever)|r
+## IconTexture: Interface/AddOns/WFC_Suite/Art/icon
+## Notes: The WFC addons for WoW: Forever, in one group: Database (shared core), Caster, ItemTips, OverlayRevamp (themes), The Plan, Professions, Questing and Travel.|n|nTick or untick the modules underneath to turn them on or off one by one.
+## Author: Aleksey
+## Version: 1.0
+## Category: WFC Suite
+
+WFC_Suite.lua

@@ -1,0 +1,27 @@
+## Interface: 16001, 11509
+## Title: WFC Questing |cff4dd9ff(Forever)|r
+## Notes: Ranks your best next quests and adds a quest panel with map, rewards, ignore and track actions
+## Author: Aleksey
+## Version: 5.2
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/INV_Misc_Book_08
+## Dependencies: WFC_Database
+## OptionalDeps: Questie, WFC_ItemTips, WFC_Travel, TomTom, ClassicQuestLog
+## SavedVariables: WFC_Questing_Global
+## SavedVariablesPerCharacter: WFC_Questing_Char
+
+Settings.lua
+Data\DungeonMaps.lua
+Data\DungeonSpawns.lua
+Scorer.lua
+QuestieBridge.lua
+Candidates.lua
+Circuit.lua
+Panel.lua
+Dungeons.lua
+DungeonMap.lua
+DungeonAtlas.lua
+Menu.lua
+Rewards.lua
+QuickDialog.lua

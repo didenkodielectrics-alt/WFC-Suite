@@ -1,0 +1,3 @@
+-- TrainerFix: Deprecated and disabled.
+-- Hooking ClassTrainerFrame/CraftFrame updates and selection taints Blizzard's protected
+-- BuyTrainerService and DoCraft actions, causing "ADDON_ACTION_BLOCKED".

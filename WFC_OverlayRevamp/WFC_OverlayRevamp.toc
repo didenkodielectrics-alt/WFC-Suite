@@ -1,0 +1,27 @@
+## Interface: 16001, 11509
+## Title: WFC OverlayRevamp |cff4dd9ff(Forever)|r
+## Notes: Whole-UI themes: Original, Original+ (race-accented stone and gold), Modern (graphite glass) and Futuristic (amber holo-city), Nightdrive (synthwave), Wildwood (glowing forest), Frostbound (glacial), Panelka (Soviet post-punk)
+## Author: Aleksey
+## Version: 7.2
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/INV_Misc_Gem_Variety_01
+## Dependencies: WFC_Database
+## OptionalDeps: WFC_ItemTips, WFC_Questing, WFC_Travel, WFC_Professions, WFC_Caster, Bagnon, BagBrother, ElvUI, Aurora, ForeverUI, ForeverClassicUI
+## SavedVariables: WFC_OverlayRevamp_Global
+
+Themes.lua
+Settings.lua
+Skin.lua
+Styles.lua
+StyleModern.lua
+StyleFuturistic.lua
+StyleNightdrive.lua
+StyleWildwood.lua
+StyleFrostbound.lua
+StylePanelka.lua
+Fonts.lua
+Frames.lua
+Chrome.lua
+ThemeButton.lua
+Glock.lua

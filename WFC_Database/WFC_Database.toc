@@ -1,0 +1,58 @@
+## Interface: 16001, 11509
+## Title: WFC Database |cff4dd9ff(Forever)|r
+## Notes: QuestieDB layer, recipes, prices, new! data and shared core for the WFC suite
+## Author: Aleksey
+## Version: 5.3
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/INV_Misc_Book_09
+## Dependencies: QuestieDB
+## OptionalDeps: Questie, Auctionator, TradeSkillMaster, !BugGrabber, BugSack
+## LoadSavedVariablesFirst: 1
+## SavedVariables: WFC_DB_Global, WFC_DB_Cache
+## SavedVariablesPerCharacter: WFC_DB_Char
+
+# Core: shared by every WFC addon
+Core\Namespace.lua
+Core\Util.lua
+Core\Compat.lua
+Core\Events.lua
+
+Core\Combat.lua
+Core\Jobs.lua
+Core\Serialize.lua
+Core\Persistence.lua
+Core\Colors.lua
+Core\Fonts.lua
+Core\Player.lua
+
+# Static data shipped with WFC (QuestieDB supplies the rest at runtime)
+Data\EraIds.lua
+Data\NewOverrides.lua
+Data\Recipes.lua
+Data\RecipeItems.lua
+Data\Corrections.lua
+
+# Database: QuestieDB adapter, sections, background indexes, public facade
+DB\DB.lua
+DB\Source.lua
+DB\Sections\Zones.lua
+DB\Sections\New.lua
+DB\Sections\Recipes.lua
+DB\Sections\Quests.lua
+DB\Sections\Items.lua
+DB\Sections\Npcs.lua
+DB\Sections\Objects.lua
+DB\Sections\Drops.lua
+DB\Sections\Prices.lua
+DB\Sections\Dungeons.lua
+DB\Indexes.lua
+DB\Facade.lua
+
+Harvester\Harvester.lua
+UI\TextBox.lua
+UI\Settings.lua
+Core\Slash.lua
+UI\Tutorial.lua
+
+Core\Init.lua

@@ -1,0 +1,17 @@
+## Interface: 16001, 11509
+## Title: WFC Professions |cff4dd9ff(Forever)|r
+## Notes: Cross-character crafting materials, scroll recipes, craftable gear for your level, and skill-up planner
+## Author: Aleksey
+## Version: 2.0
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/Trade_Engraving
+## Dependencies: WFC_Database
+## OptionalDeps: BagBrother, Bagnon
+## SavedVariables: WFC_Professions_Global
+## SavedVariablesPerCharacter: WFC_Professions_Char
+
+Settings.lua
+Inventory.lua
+Engine.lua
+Panel.lua

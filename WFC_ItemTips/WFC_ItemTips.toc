@@ -1,0 +1,21 @@
+## Interface: 16001, 11509
+## Title: WFC ItemTips |cff4dd9ff(Forever)|r
+## Notes: Adds a keep / craft / auction / vendor verdict to item tooltips
+## Author: Aleksey
+## Version: 5.7
+## Category: WFC Suite
+## Group: WFC_Suite
+## IconTexture: Interface/Icons/INV_Misc_Coin_01
+## Dependencies: WFC_Database
+## OptionalDeps: Questie, Auctionator
+## SavedVariables: WFC_ItemTips_Global
+
+Settings.lua
+Disenchant.lua
+Advisor.lua
+Format.lua
+Context.lua
+NodeGlow.lua
+Tooltip.lua
+InventoryValue.lua
+
