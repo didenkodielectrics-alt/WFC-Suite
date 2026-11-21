@@ -82,14 +82,30 @@ local function buildMinimap()
     end
     mm.back = layer(1)
     mm.front = layer(3)
+    -- Housing behind the map (layer field under = true): a lower strata always draws beneath it.
+    mm.under = layer(0)
+    mm.under:SetFrameStrata("BACKGROUND")
     local acc = 0
     mm.front:SetScript("OnUpdate", function(_, el)
         acc = acc + el
-        if acc < 0.05 then return end
+        if acc < 0.033 then return end
+        local dt = acc
         acc = 0
         local now = GetTime()
         for _, t in ipairs(mm.layers) do
-            if t.spin and t:IsShown() and t.SetRotation then t:SetRotation(now * t.spin) end
+            if t:IsShown() then
+                if t.spin and t.SetRotation then t:SetRotation(now * t.spin) end
+                local P = t.pulse
+                if P then -- blink / breathe: alpha between P.min and 1 of the layer's own alpha
+                    local k = 0.5 + 0.5 * math.sin(now * P.speed + (P.phase or 0))
+                    if P.hard then k = k > 0.5 and 1 or 0 end
+                    t:SetAlpha(P.min + (1 - P.min) * k)
+                end
+                if t.scroll then -- rolling static (texture wraps vertically)
+                    t.off = ((t.off or 0) + dt * t.scroll) % 1
+                    t:SetTexCoord(0, 1, t.off, t.off + 1)
+                end
+            end
         end
     end)
     return mm
@@ -100,29 +116,34 @@ local function applyMinimap(C)
     local m = buildMinimap()
     for _, t in ipairs(m.layers) do t:Hide() end
     if not C then
-        m.back:Hide(); m.front:Hide()
+        m.back:Hide(); m.front:Hide(); m.under:Hide()
         return
     end
     for _, r in ipairs(minimapArt()) do fade(r) end
     local d = _G.Minimap:GetWidth() or 140
+    -- Layer fields: file, scale (of the minimap width), color, blend, and optionally
+    -- under/back (draw beneath the map / just around it), x/y (offset in minimap widths),
+    -- spin (rad/s), pulse { speed, min, phase, hard }, scroll (texture heights per second).
     for i, L in ipairs(C) do
         local t = m.layers[i]
         if not t then
-            t = m.front:CreateTexture(nil, "ARTWORK", nil, math.min(7, i - 4))
+            t = m.front:CreateTexture(nil, "ARTWORK", nil, math.min(7, i - 6))
             m.layers[i] = t
         end
-        t:SetParent(L.back and m.back or m.front)
+        t:SetParent(L.under and m.under or L.back and m.back or m.front)
         t:ClearAllPoints()
-        t:SetPoint("CENTER", _G.Minimap, "CENTER")
-        t:SetTexture(L.file)
+        t:SetPoint("CENTER", _G.Minimap, "CENTER", (L.x or 0) * d, (L.y or 0) * d)
+        if L.scroll then t:SetTexture(L.file, "REPEAT", "REPEAT") else t:SetTexture(L.file) end
+        t:SetTexCoord(0, 1, 0, 1)
         t:SetSize(d * L.scale, d * L.scale)
         t:SetBlendMode(L.blend or "BLEND")
         color(t, L.color)
-        t.spin = L.spin
+        t:SetAlpha(1)
+        t.spin, t.pulse, t.scroll, t.off = L.spin, L.pulse, L.scroll, 0
         if not L.spin and t.SetRotation then t:SetRotation(0) end
         t:Show()
     end
-    m.back:Show(); m.front:Show()
+    m.back:Show(); m.front:Show(); m.under:Show()
 end
 
 ---------------------------------------------------------------------------

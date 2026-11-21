@@ -109,10 +109,31 @@ ns.Styles.NewPack({
     },
 
     chrome = {
+        -- A Soviet radio set: the map sits in a square concrete housing (bolted, double frame,
+        -- tick marks) with VHS static rolling over it, two dials turning against each other,
+        -- a red radar beam sweeping the map, and two red indicator lamps blinking in turn.
         minimap = {
-            { file = M .. "ring_shadow", scale = 1.3, color = { 0, 0, 0, 0.8 }, back = true },
-            { file = M .. "ring", scale = 1.04, color = { 0.85, 0.86, 0.88, 0.55 } },
-            { file = PK .. "pk_dial", scale = 1.42, color = { 0.85, 0.86, 0.88, 0.55 }, blend = "ADD", spin = 0.02 },
+            -- housing (under the map)
+            { file = M .. "round_shadow", scale = 1.95, color = { 0, 0, 0, 0.75 }, under = true },
+            { file = PK .. "mm_plate", scale = 1.66, color = { 0.13, 0.13, 0.14, 0.97 }, under = true },
+            { file = PK .. "concrete", scale = 1.62, color = { 1, 1, 1, 0.07 }, under = true },
+            { file = PK .. "vhs", scale = 1.62, color = { 1, 1, 1, 0.07 }, blend = "ADD", under = true, scroll = -0.18 },
+            { file = PK .. "pk_blocks", scale = 1.56, y = -0.05, color = { 0.85, 0.87, 0.9, 0.12 }, blend = "ADD", under = true },
+            { file = PK .. "mm_plate_edge", scale = 1.66, color = { 0.72, 0.73, 0.75, 0.9 }, under = true },
+            -- around the map
+            { file = M .. "ring_shadow", scale = 1.3, color = { 0, 0, 0, 0.85 }, back = true },
+            { file = M .. "ring", scale = 1.04, color = { 0.91, 0.90, 0.87, 0.75 } },
+            { file = PK .. "pk_dial", scale = 1.44, color = { 0.85, 0.86, 0.88, 0.6 }, blend = "ADD", spin = 0.05 },
+            { file = PK .. "pk_dial", scale = 1.24, color = { 0.95, 0.30, 0.25, 0.45 }, blend = "ADD", spin = -0.11 },
+            -- radar beam over the map
+            { file = PK .. "mm_sweep", scale = 1.0, color = { 1, 0.28, 0.22, 0.46 }, blend = "ADD", spin = -1.1 },
+            -- indicator lamps in the top corners, blinking in turn, and the emblem at the bottom
+            { file = F .. "mote", scale = 0.16, x = -0.69, y = 0.69, color = { 1, 0.22, 0.15, 1 }, blend = "ADD",
+                pulse = { speed = 3.2, min = 0.08, hard = true } },
+            { file = F .. "mote", scale = 0.16, x = 0.69, y = 0.69, color = { 1, 0.22, 0.15, 1 }, blend = "ADD",
+                pulse = { speed = 3.2, min = 0.08, hard = true, phase = math.pi } },
+            { file = PK .. "pk_emblem", scale = 0.17, y = -0.7, color = { 0.78, 0.24, 0.20, 0.95 },
+                pulse = { speed = 1.2, min = 0.55 } },
         },
         -- a panel tower with a red aircraft-warning light on its antenna
         caps = { file = PK .. "pk_tower", ratio = 0.5, scale = 1.5, color = { 0.82, 0.84, 0.88, 0.85 },
