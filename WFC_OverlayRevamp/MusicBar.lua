@@ -83,13 +83,19 @@ local function build()
     return bar
 end
 
+-- Always beside the THEMES button (it follows the button when that moves). At login the music
+-- can start before THEMES exists: then wait for it instead of parking the bar in the corner,
+-- where it covered the Professions / value / Aspect launchers.
 local function place()
     bar:ClearAllPoints()
     local launcher = _G.WFC_ThemeLauncher
-    if launcher and launcher:IsShown() then
+    if launcher then
         bar:SetPoint("LEFT", launcher, "RIGHT", 4, 0)
+        bar:SetAlpha(1)
     else
-        bar:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 14, -60)
+        bar:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 14, -94 - 32)
+        bar:SetAlpha(0)
+        C_Timer.After(1, function() if bar and bar:IsShown() then place() end end)
     end
 end
 
